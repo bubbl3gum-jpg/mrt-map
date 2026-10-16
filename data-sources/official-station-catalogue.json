@@ -1,0 +1,551 @@
+{
+  "source": "https://web.metro.taipei/pages2026/js/stations-data.js",
+  "retrievedAt": "2026-10-16T05:26:02.287Z",
+  "scope": "Search catalogue only; not evidence of operating status, station sequence, English names, coordinates or physical grouping",
+  "records": [
+    {
+      "code": "BR01",
+      "nameZh": "動物園"
+    },
+    {
+      "code": "BR02",
+      "nameZh": "木柵"
+    },
+    {
+      "code": "BR03",
+      "nameZh": "萬芳社區"
+    },
+    {
+      "code": "BR04",
+      "nameZh": "萬芳醫院"
+    },
+    {
+      "code": "BR05",
+      "nameZh": "辛亥"
+    },
+    {
+      "code": "BR06",
+      "nameZh": "麟光"
+    },
+    {
+      "code": "BR07",
+      "nameZh": "六張犁"
+    },
+    {
+      "code": "BR08",
+      "nameZh": "科技大樓"
+    },
+    {
+      "code": "BR09",
+      "nameZh": "大安"
+    },
+    {
+      "code": "BR10",
+      "nameZh": "忠孝復興"
+    },
+    {
+      "code": "BR11",
+      "nameZh": "南京復興"
+    },
+    {
+      "code": "BR12",
+      "nameZh": "中山國中"
+    },
+    {
+      "code": "BR13",
+      "nameZh": "松山機場"
+    },
+    {
+      "code": "BR14",
+      "nameZh": "大直"
+    },
+    {
+      "code": "BR15",
+      "nameZh": "劍南路"
+    },
+    {
+      "code": "BR16",
+      "nameZh": "西湖"
+    },
+    {
+      "code": "BR17",
+      "nameZh": "港墘"
+    },
+    {
+      "code": "BR18",
+      "nameZh": "文德"
+    },
+    {
+      "code": "BR19",
+      "nameZh": "內湖"
+    },
+    {
+      "code": "BR20",
+      "nameZh": "大湖公園"
+    },
+    {
+      "code": "BR21",
+      "nameZh": "葫洲"
+    },
+    {
+      "code": "BR22",
+      "nameZh": "東湖"
+    },
+    {
+      "code": "BR23",
+      "nameZh": "南港軟體園區"
+    },
+    {
+      "code": "BR24",
+      "nameZh": "南港展覽館"
+    },
+    {
+      "code": "R01",
+      "nameZh": "廣慈/奉天宮"
+    },
+    {
+      "code": "R02",
+      "nameZh": "象山"
+    },
+    {
+      "code": "R03",
+      "nameZh": "台北101/世貿"
+    },
+    {
+      "code": "R04",
+      "nameZh": "信義安和"
+    },
+    {
+      "code": "R05",
+      "nameZh": "大安"
+    },
+    {
+      "code": "R06",
+      "nameZh": "大安森林公園"
+    },
+    {
+      "code": "R07",
+      "nameZh": "東門"
+    },
+    {
+      "code": "R08",
+      "nameZh": "中正紀念堂"
+    },
+    {
+      "code": "R09",
+      "nameZh": "台大醫院"
+    },
+    {
+      "code": "R10",
+      "nameZh": "台北車站"
+    },
+    {
+      "code": "R11",
+      "nameZh": "中山"
+    },
+    {
+      "code": "R12",
+      "nameZh": "雙連"
+    },
+    {
+      "code": "R13",
+      "nameZh": "民權西路"
+    },
+    {
+      "code": "R14",
+      "nameZh": "圓山"
+    },
+    {
+      "code": "R15",
+      "nameZh": "劍潭"
+    },
+    {
+      "code": "R16",
+      "nameZh": "士林"
+    },
+    {
+      "code": "R17",
+      "nameZh": "芝山"
+    },
+    {
+      "code": "R18",
+      "nameZh": "明德"
+    },
+    {
+      "code": "R19",
+      "nameZh": "石牌"
+    },
+    {
+      "code": "R20",
+      "nameZh": "唭哩岸"
+    },
+    {
+      "code": "R21",
+      "nameZh": "奇岩"
+    },
+    {
+      "code": "R22",
+      "nameZh": "北投"
+    },
+    {
+      "code": "R22A",
+      "nameZh": "新北投"
+    },
+    {
+      "code": "R23",
+      "nameZh": "復興崗"
+    },
+    {
+      "code": "R24",
+      "nameZh": "忠義"
+    },
+    {
+      "code": "R25",
+      "nameZh": "關渡"
+    },
+    {
+      "code": "R26",
+      "nameZh": "竹圍"
+    },
+    {
+      "code": "R27",
+      "nameZh": "紅樹林"
+    },
+    {
+      "code": "R28",
+      "nameZh": "淡水"
+    },
+    {
+      "code": "G01",
+      "nameZh": "新店"
+    },
+    {
+      "code": "G02",
+      "nameZh": "新店區公所"
+    },
+    {
+      "code": "G03",
+      "nameZh": "七張"
+    },
+    {
+      "code": "G03A",
+      "nameZh": "小碧潭"
+    },
+    {
+      "code": "G04",
+      "nameZh": "大坪林"
+    },
+    {
+      "code": "G05",
+      "nameZh": "景美"
+    },
+    {
+      "code": "G06",
+      "nameZh": "萬隆"
+    },
+    {
+      "code": "G07",
+      "nameZh": "公館"
+    },
+    {
+      "code": "G08",
+      "nameZh": "台電大樓"
+    },
+    {
+      "code": "G09",
+      "nameZh": "古亭"
+    },
+    {
+      "code": "G10",
+      "nameZh": "中正紀念堂"
+    },
+    {
+      "code": "G11",
+      "nameZh": "小南門"
+    },
+    {
+      "code": "G12",
+      "nameZh": "西門"
+    },
+    {
+      "code": "G13",
+      "nameZh": "北門"
+    },
+    {
+      "code": "G14",
+      "nameZh": "中山"
+    },
+    {
+      "code": "G15",
+      "nameZh": "松江南京"
+    },
+    {
+      "code": "G16",
+      "nameZh": "南京復興"
+    },
+    {
+      "code": "G17",
+      "nameZh": "台北小巨蛋"
+    },
+    {
+      "code": "G18",
+      "nameZh": "南京三民"
+    },
+    {
+      "code": "G19",
+      "nameZh": "松山"
+    },
+    {
+      "code": "O01",
+      "nameZh": "南勢角"
+    },
+    {
+      "code": "O02",
+      "nameZh": "景安"
+    },
+    {
+      "code": "O03",
+      "nameZh": "永安市場"
+    },
+    {
+      "code": "O04",
+      "nameZh": "頂溪"
+    },
+    {
+      "code": "O05",
+      "nameZh": "古亭"
+    },
+    {
+      "code": "O06",
+      "nameZh": "東門"
+    },
+    {
+      "code": "O07",
+      "nameZh": "忠孝新生"
+    },
+    {
+      "code": "O08",
+      "nameZh": "松江南京"
+    },
+    {
+      "code": "O09",
+      "nameZh": "行天宮"
+    },
+    {
+      "code": "O10",
+      "nameZh": "中山國小"
+    },
+    {
+      "code": "O11",
+      "nameZh": "民權西路"
+    },
+    {
+      "code": "O12",
+      "nameZh": "大橋頭"
+    },
+    {
+      "code": "O13",
+      "nameZh": "台北橋"
+    },
+    {
+      "code": "O14",
+      "nameZh": "菜寮"
+    },
+    {
+      "code": "O15",
+      "nameZh": "三重"
+    },
+    {
+      "code": "O16",
+      "nameZh": "先嗇宮"
+    },
+    {
+      "code": "O17",
+      "nameZh": "頭前庄"
+    },
+    {
+      "code": "O18",
+      "nameZh": "新莊"
+    },
+    {
+      "code": "O19",
+      "nameZh": "輔大"
+    },
+    {
+      "code": "O20",
+      "nameZh": "丹鳳"
+    },
+    {
+      "code": "O21",
+      "nameZh": "迴龍"
+    },
+    {
+      "code": "O50",
+      "nameZh": "三重國小"
+    },
+    {
+      "code": "O51",
+      "nameZh": "三和國中"
+    },
+    {
+      "code": "O52",
+      "nameZh": "徐匯中學"
+    },
+    {
+      "code": "O53",
+      "nameZh": "三民高中"
+    },
+    {
+      "code": "O54",
+      "nameZh": "蘆洲"
+    },
+    {
+      "code": "BL01",
+      "nameZh": "頂埔"
+    },
+    {
+      "code": "BL02",
+      "nameZh": "永寧"
+    },
+    {
+      "code": "BL03",
+      "nameZh": "土城"
+    },
+    {
+      "code": "BL04",
+      "nameZh": "海山"
+    },
+    {
+      "code": "BL05",
+      "nameZh": "亞東醫院"
+    },
+    {
+      "code": "BL06",
+      "nameZh": "府中"
+    },
+    {
+      "code": "BL07",
+      "nameZh": "板橋"
+    },
+    {
+      "code": "BL08",
+      "nameZh": "新埔"
+    },
+    {
+      "code": "BL09",
+      "nameZh": "江子翠"
+    },
+    {
+      "code": "BL10",
+      "nameZh": "龍山寺"
+    },
+    {
+      "code": "BL11",
+      "nameZh": "西門"
+    },
+    {
+      "code": "BL12",
+      "nameZh": "台北車站"
+    },
+    {
+      "code": "BL13",
+      "nameZh": "善導寺"
+    },
+    {
+      "code": "BL14",
+      "nameZh": "忠孝新生"
+    },
+    {
+      "code": "BL15",
+      "nameZh": "忠孝復興"
+    },
+    {
+      "code": "BL16",
+      "nameZh": "忠孝敦化"
+    },
+    {
+      "code": "BL17",
+      "nameZh": "國父紀念館"
+    },
+    {
+      "code": "BL18",
+      "nameZh": "市政府"
+    },
+    {
+      "code": "BL19",
+      "nameZh": "永春"
+    },
+    {
+      "code": "BL20",
+      "nameZh": "後山埤"
+    },
+    {
+      "code": "BL21",
+      "nameZh": "昆陽"
+    },
+    {
+      "code": "BL22",
+      "nameZh": "南港"
+    },
+    {
+      "code": "BL23",
+      "nameZh": "南港展覽館"
+    },
+    {
+      "code": "Y07",
+      "nameZh": "大坪林"
+    },
+    {
+      "code": "Y08",
+      "nameZh": "十四張"
+    },
+    {
+      "code": "Y09",
+      "nameZh": "秀朗橋"
+    },
+    {
+      "code": "Y10",
+      "nameZh": "景平"
+    },
+    {
+      "code": "Y11",
+      "nameZh": "景安"
+    },
+    {
+      "code": "Y12",
+      "nameZh": "中和"
+    },
+    {
+      "code": "Y13",
+      "nameZh": "橋和"
+    },
+    {
+      "code": "Y14",
+      "nameZh": "中原"
+    },
+    {
+      "code": "Y15",
+      "nameZh": "板新"
+    },
+    {
+      "code": "Y16",
+      "nameZh": "板橋"
+    },
+    {
+      "code": "Y17",
+      "nameZh": "新埔民生"
+    },
+    {
+      "code": "Y18",
+      "nameZh": "頭前庄"
+    },
+    {
+      "code": "Y19",
+      "nameZh": "幸福"
+    },
+    {
+      "code": "Y20",
+      "nameZh": "新北產業園區"
+    }
+  ]
+}
