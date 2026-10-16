@@ -1,50 +1,63 @@
 # Hustlen’ MRT handoff playground
 
-Standalone React + TypeScript + Vite + Tailwind CSS application. No production integration, accounts, API, database, or booking writes. This repository was empty, so the application lives at its root.
+Standalone React + TypeScript + Vite + Tailwind CSS + original SVG experiment. The existing Owner/Borrower experience is preserved; no production application, authentication, database or booking API is involved.
 
 ## Run
 
-Node 22+ recommended (validated with Node 24.19.0 and npm 11.9.0).
+Node 22+ (validated on Node 24). From this repository:
 
 ```sh
 npm install
 npm run dev
 ```
 
-Open the address Vite prints in your local browser. In a restricted cloud filesystem, use `npm install --cache /tmp/mrt-npm-cache`. To reproduce locked dependencies, use `npm ci --cache /tmp/mrt-npm-cache`.
+Use Vite’s printed development address in a supported local browser. For a restricted cloud filesystem, append `--cache /tmp/mrt-npm-cache` to installation commands. Reproduce the lockfile with `npm ci`.
+
+The active network now includes **all 136 line-specific codes mapped to 120 physical handoff locations**, using October 2026 official sources. It includes R01 Guangci/Fengtian Temple, Xinbeitou, Xiaobitan, both Orange branches, and all Y07–Y20 stations. This is a dated source comparison, not a live service-status guarantee. See [station inventory and count reconciliation](STATION_INVENTORY.md).
+
+## Use the existing demo
+
+- **Owner mode:** select/deselect multiple station markers, select every station on a line, remove individual locations, clear all, or save availability. Changes autosave locally; Save availability acknowledges an explicit save.
+- **Borrower mode:** only owner-approved stations are selectable. Choose exactly one station and confirm to see a simulated summary. Grey stations cannot be confirmed. No booking is created.
+- **Persistence:** the same `hustlen-mrt-demo-v1` localStorage key and all 26 legacy IDs are retained with their exact physical meaning. Availability, mode and choice survive browser refresh on the same origin. The official English display names may differ from the old fixture; IDs do not.
+- **Search:** English, Traditional Chinese or any station code. Choosing a result zooms and centers on its marker without changing availability.
+- **Map:** all 120 markers appear in the overview; terminal/selected labels provide context. Zoom +/− (up to 800%), drag the background to pan, Ctrl/⌘ + scroll to zoom, or reset the view. Label density adapts to zoom and avoids overlaps. Hover or keyboard-focus a marker for bilingual details; labels never intercept another station’s click.
+- **Playground controls:** sample availability, clear selection, reset app state, inspect IDs/source status and independently show/hide transport systems. Network visibility does not change saved availability. The current task contains one MRT system; no future LRT was added.
+
+Banqiao BL07/Y16 and Xinpu BL08/Xinpu Minsheng Y17 are separate handoff locations with dashed walking connections. Shared in-station interchanges have one selectable identity with all line codes. A station complex is not a specific exit; agree on an exit for any real-world handoff.
+
+## Validation
 
 ```sh
-npm run build
 npm test
 npm run validate:data
+npm run validate:official
+npm run build
 ```
 
-Owner mode toggles multiple stations, selects loaded stations by line, removes selections, and saves availability to browser localStorage. Changes autosave; Save availability explicitly acknowledges saving. Borrower mode enables only approved stations, permits one selection, and shows a simulated summary. No real booking occurs. Both modes and selections survive refresh on the same browser origin. Playground controls provide samples, clearing, resetting, IDs, and provenance. Reset clears this app’s saved selection without clearing other sites’ data.
+The tests compare raw CSV route order, branch/terminal coverage, official code/SID identities, bilingual search, coordinates, legacy compatibility and selection rules. The official validator checks the eleven raw snapshot hashes and connectivity as well as topology. A structural pass alone does not establish network accuracy.
 
-Search English, Traditional Chinese, or station codes. Select a search result to highlight its marker; use zoom and pan to inspect. Keyboard users can tab to enabled markers and press Enter/Space. Drag the map background to pan, use +/− to zoom, and the target button to reset the view. The layout adapts to mobile widths.
+To repeat the full Chromium interaction check and refresh screenshots, keep the Vite server running:
 
-## Accuracy limitation — read before evaluating network coverage
+```sh
+npx playwright install chromium  # only if no supported Chromium is already installed
+npm run test:browser
+```
 
-**This is a working interaction prototype, not a complete official MRT map.** The official search catalogue was retrieved after an initial network block, but the TDX station API requires an API key and a complete official operating network could not be obtained. The official code/Chinese-name catalogue is preserved in `data-sources/`; the interactive map ships a hand-authored 26-station illustrative subset, without claiming authoritative topology, coordinates, or complete branches. All six line families appear, but no complete line is represented. Line selection means all **loaded** stations of that line. See [SOURCE_REPORT.md](SOURCE_REPORT.md) and [DATA_IMPORT.md](DATA_IMPORT.md).
+The smoke script uses `/usr/bin/chromium` when available, otherwise Playwright’s installed browser. Set `MRT_BROWSER_PATH` for another executable or `MRT_DEMO_URL` for a different server address. It performs real pointer selections for every station on desktop/mobile, every approved borrower choice on desktop, refresh checks, unavailable-station rejection, confirmation, legacy IDs, search centering, and pan/reset. It writes `docs/browser-validation.json` only after the complete run passes. Screenshots: [desktop overview](docs/screenshots/desktop.png), [desktop detail](docs/screenshots/desktop-detail.png), [mobile](docs/screenshots/mobile.png).
 
-Banqiao Bannan and Circular stops have separate IDs and a dashed walking connection; this example must be checked against official transfer guidance. Interchanges within the fixture use one physical ID with multiple line codes. The disconnected BL Banqiao and O Touqianzhuang markers do not imply missing segments are direct connections. No synthetic edges join omitted stations. River shape and all positions are schematic artwork, not geographic data.
+## Data, isolation and future expansion
 
-## Structure
+- [SOURCE_REPORT.md](SOURCE_REPORT.md): sources, raw discrepancies, field mappings, verification scope and limitations.
+- [DATA_IMPORT.md](DATA_IMPORT.md): downloading official CSV/JSON/HTML evidence and reproducing the import.
+- `data-sources/raw/2026-10-16/`: dated unmodified official sources, download URLs, request bodies and SHA-256 manifest.
+- `data-sources/physical-identities.json`: explicit official SID → stable handoff-ID mapping, preserving legacy IDs.
+- `data-sources/schematic-layout.json`: independently authored coordinates keyed by line code; no operating sequence is inferred from position.
+- `data-sources/normalized/`: per-station inventory CSV, count/coverage JSON and field corrections.
+- `src/data/official-network.json`: generated active data. `fixture.ts` remains for compatibility tests only; there is no silent fixture fallback.
+- `src/utils/`: validation, search, availability checks and screen-space label collision handling.
+- `src/components/MRTMap.tsx`: original vector rendering and interaction; no static-image overlay.
 
-- `src/data/types.ts`: data contract, physical stations, routes, external transfers, layout
-- `src/data/fixture.ts`: clearly labeled illustrative records
-- `src/data/network.ts`: loads official normalized data when imported; otherwise fixture
-- `src/data/lines.ts`: line colors and bilingual line labels
-- `src/components/MRTMap.tsx`: original SVG network, marker interactions, pan and zoom
-- `src/App.tsx`: owner/borrower panels, search, controls, persistence
-- `src/utils/station-validation.ts`: data integrity, search and availability rules
-- `scripts/`: import and validation CLIs
-- `tests/`: interaction/persistence/identity/validation tests
+The schema includes open line IDs, configurable code formats, line colors, operators, metro/light-rail systems, route variants, shared canonical stations and separate walking transfers. UI lines come from the network data. Additional transport systems can be toggled independently without conflating operators or stations. Danhai, Ankeng and Sanying are intentionally outside the current dataset.
 
-SVG extents adapt to imported layout coordinates. Route polylines follow explicit source sequences; branches must be separate routes sharing canonical station IDs. Official order verification requires source comparison, not just a passing structural check.
-
-## Preview and evaluation
-
-Run the dev server, choose Taipei Main Station and Zhongshan, switch to Borrower mode, and confirm one. Refresh to check persistence. Grey stations must remain unavailable. Open Playground controls to load samples or reset. Run tests for automated coverage. No cloud preview URL is assumed; use a locally supported browser or forwarded development server.
-
-Captured previews: [desktop](docs/screenshots/desktop.png) · [mobile](docs/screenshots/mobile.png). These show the illustrative subset, not a verified complete MRT network. Validation results are recorded in SOURCE_REPORT.md.
+Remaining qualifications: the Y topology is verified from the operator’s ordered station table and official diagram rather than a TDX RouteID export; eleven Circular-only stations lack geographic coordinates in these sources but have valid SVG coordinates; the supplied nominal 132 operator baseline has a different counting basis from physical locations; schematic label placement can still be refined. Complete evidence and count arithmetic are documented rather than forcing 132 markers.

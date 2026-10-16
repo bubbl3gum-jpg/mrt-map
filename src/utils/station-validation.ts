@@ -1,7 +1,34 @@
 import type { Network } from "../data/types";
-import { lines } from "../data/lines";
+import { lines as defaultLines } from "../data/lines";
 export function validateNetwork(n: Network): string[] {
   const errors: string[] = [];
+  const lines = n.lines ?? defaultLines;
+  const definedLines = new Set<string>();
+  const patterns = new Map<string, RegExp>();
+  for (const line of lines) {
+    if (definedLines.has(line.id)) errors.push(`Duplicate line ID: ${line.id}`);
+    definedLines.add(line.id);
+    try {
+      patterns.set(
+        line.id,
+        new RegExp(line.codePattern ?? `^${line.id}\\d{2}[A-Z]?$`),
+      );
+    } catch {
+      errors.push(`Invalid code pattern: ${line.id}`);
+    }
+    if (
+      n.operators &&
+      line.operatorId &&
+      !n.operators.some((o) => o.id === line.operatorId)
+    )
+      errors.push(`Unknown operator: ${line.operatorId}`);
+    if (
+      n.systems &&
+      line.systemId &&
+      !n.systems.some((s) => s.id === line.systemId)
+    )
+      errors.push(`Unknown transport system: ${line.systemId}`);
+  }
   const ids = new Set<string>();
   const codes = new Set<string>();
   if (n.schemaVersion !== 1) errors.push("Unsupported schema version");
@@ -11,16 +38,15 @@ export function validateNetwork(n: Network): string[] {
     if (ids.has(s.id) || !s.id)
       errors.push(`Duplicate/empty station ID: ${s.id}`);
     ids.add(s.id);
+    if (s.operational === false)
+      errors.push(`Non-operational station in selectable network: ${s.id}`);
     if (!s.nameEn || !s.nameZh) errors.push(`Missing bilingual name: ${s.id}`);
     if (!Object.keys(s.codes).length) errors.push(`Missing codes: ${s.id}`);
     for (const [line, code] of Object.entries(s.codes)) {
-      if (
-        !lines.some((l) => l.id === line) ||
-        !new RegExp(`^${line}\\d{2}[A-Z]?$`).test(code!)
-      )
+      if (!lines.some((l) => l.id === line) || !patterns.get(line)?.test(code!))
         errors.push(`Invalid code: ${code}`);
-      if (codes.has(code!)) errors.push(`Duplicate code: ${code}`);
-      codes.add(code!);
+      if (codes.has(`${line}:${code}`)) errors.push(`Duplicate code: ${code}`);
+      codes.add(`${line}:${code}`);
     }
     const p = n.layout[s.id];
     if (!p || !Number.isFinite(p.x) || !Number.isFinite(p.y))
@@ -62,6 +88,10 @@ export function validateNetwork(n: Network): string[] {
 }
 export function searchStations(n: Network, q: string) {
   const term = q.trim().toLocaleLowerCase();
+  const exactCodes = n.stations.filter((s) =>
+    Object.values(s.codes).some((code) => code.toLocaleLowerCase() === term),
+  );
+  if (exactCodes.length) return exactCodes;
   return n.stations.filter((s) =>
     [s.nameEn, s.nameZh, ...Object.values(s.codes)].some((v) =>
       v?.toLocaleLowerCase().includes(term),

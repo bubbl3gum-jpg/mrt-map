@@ -15,7 +15,8 @@ import {
   RotateCcw,
 } from "lucide-react";
 import { network } from "./data/network";
-import { lines } from "./data/lines";
+import { lines as fallbackLines } from "./data/lines";
+const lines = network.lines ?? fallbackLines;
 import {
   approvedChoice,
   searchStations,
@@ -52,9 +53,13 @@ export default function App() {
   const [mode, setMode] = useState(initial.mode);
   const [query, setQuery] = useState("");
   const [focus, setFocus] = useState<string | null>(null);
+  const [focusRevision, setFocusRevision] = useState(0);
   const [saved, setSaved] = useState(false);
   const [summary, setSummary] = useState(false);
   const [dev, setDev] = useState(false);
+  const [visibleSystems, setVisibleSystems] = useState(
+    network.systems?.map((s) => s.id) ?? [],
+  );
   const borrower = mode === "borrower";
   const errors = validateNetwork(network);
   const selected = network.stations.filter((s) => available.includes(s.id));
@@ -69,7 +74,6 @@ export default function App() {
     if (!approvedChoice(choice, ids)) setChoice(null);
   }
   function select(id: string) {
-    setFocus(id);
     if (borrower) {
       if (available.includes(id)) {
         setChoice(id);
@@ -88,6 +92,7 @@ export default function App() {
     setMode("owner");
     setQuery("");
     setFocus(null);
+    setVisibleSystems(network.systems?.map((s) => s.id) ?? []);
   }
   return (
     <>
@@ -164,6 +169,7 @@ export default function App() {
                           key={s.id}
                           onClick={() => {
                             setFocus(s.id);
+                            setFocusRevision((n) => n + 1);
                             setQuery("");
                           }}
                         >
@@ -181,7 +187,7 @@ export default function App() {
                 )}
               </div>
               <span className="station-count">
-                <Layers size={14} /> {network.stations.length} demo stations
+                <Layers size={14} /> {network.stations.length} stations
               </span>
             </div>
             <div className="data-notice">
@@ -189,7 +195,7 @@ export default function App() {
               <span>
                 {network.status === "illustrative"
                   ? "Illustrative subset — complete official network not imported. Topology and layout are not verified."
-                  : "Imported data — structural checks do not establish official topology accuracy."}
+                  : "Official route data · October 2026 · Schematic layout under review."}
               </span>
             </div>
             <MRTMap
@@ -199,6 +205,9 @@ export default function App() {
               borrower={borrower}
               onSelect={select}
               focus={focus}
+              focusRevision={focusRevision}
+              onResetView={() => setFocus(null)}
+              visibleSystemIds={network.systems ? visibleSystems : undefined}
             />
             <div className="line-legend">
               {lines.map((l) => (
@@ -441,6 +450,24 @@ export default function App() {
           </button>
           {dev && (
             <div className="developer-body">
+              <div className="system-filters">
+                {network.systems?.map((system) => (
+                  <label key={system.id}>
+                    <input
+                      type="checkbox"
+                      checked={visibleSystems.includes(system.id)}
+                      onChange={(e) =>
+                        setVisibleSystems((ids) =>
+                          e.target.checked
+                            ? [...ids, system.id]
+                            : ids.filter((id) => id !== system.id),
+                        )
+                      }
+                    />
+                    {system.name} network
+                  </label>
+                ))}
+              </div>
               <div className="dev-actions">
                 <button
                   onClick={() => {
@@ -476,7 +503,10 @@ export default function App() {
                   {errors.length
                     ? errors.join(", ")
                     : "Structural checks passed"}{" "}
-                  · Official topology unverified.{" "}
+                  ·{" "}
+                  {network.validation?.topology === "source-compared"
+                    ? "Route sequences compared with retained official sources. Layout remains schematic."
+                    : "Official topology unverified."}{" "}
                   {network.sources.length
                     ? network.sources
                         .map((s) => `${s.url} (${s.retrievedAt})`)

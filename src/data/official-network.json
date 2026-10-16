@@ -1,0 +1,4109 @@
+{
+  "schemaVersion": 1,
+  "status": "imported",
+  "asOf": "2026-10-16",
+  "stations": [
+    {
+      "id": "taipei-mrt:station:019",
+      "officialId": "metro-taipei:SID:019",
+      "nameEn": "Taipei Zoo",
+      "nameZh": "動物園",
+      "codes": {
+        "BR": "BR01"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#1"
+      ],
+      "longitude": 121.579501,
+      "latitude": 24.998205
+    },
+    {
+      "id": "taipei-mrt:station:018",
+      "officialId": "metro-taipei:SID:018",
+      "nameEn": "Muzha",
+      "nameZh": "木柵",
+      "codes": {
+        "BR": "BR02"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#2"
+      ],
+      "longitude": 121.573127,
+      "latitude": 24.99824
+    },
+    {
+      "id": "taipei-mrt:station:017",
+      "officialId": "metro-taipei:SID:017",
+      "nameEn": "Wanfang Community",
+      "nameZh": "萬芳社區",
+      "codes": {
+        "BR": "BR03"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#3"
+      ],
+      "longitude": 121.568088,
+      "latitude": 24.99857
+    },
+    {
+      "id": "taipei-mrt:station:016",
+      "officialId": "metro-taipei:SID:016",
+      "nameEn": "Wanfang Hospital",
+      "nameZh": "萬芳醫院",
+      "codes": {
+        "BR": "BR04"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#4"
+      ],
+      "longitude": 121.558092,
+      "latitude": 24.99932
+    },
+    {
+      "id": "taipei-mrt:station:015",
+      "officialId": "metro-taipei:SID:015",
+      "nameEn": "Xinhai",
+      "nameZh": "辛亥",
+      "codes": {
+        "BR": "BR05"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#5"
+      ],
+      "longitude": 121.5570455,
+      "latitude": 25.005455
+    },
+    {
+      "id": "taipei-mrt:station:014",
+      "officialId": "metro-taipei:SID:014",
+      "nameEn": "Linguang",
+      "nameZh": "麟光",
+      "codes": {
+        "BR": "BR06"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#6"
+      ],
+      "longitude": 121.5588335,
+      "latitude": 25.018495
+    },
+    {
+      "id": "taipei-mrt:station:013",
+      "officialId": "metro-taipei:SID:013",
+      "nameEn": "Liuzhangli",
+      "nameZh": "六張犁",
+      "codes": {
+        "BR": "BR07"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#7"
+      ],
+      "longitude": 121.55302,
+      "latitude": 25.02381
+    },
+    {
+      "id": "taipei-mrt:station:012",
+      "officialId": "metro-taipei:SID:012",
+      "nameEn": "Technology Building",
+      "nameZh": "科技大樓",
+      "codes": {
+        "BR": "BR08"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#8"
+      ],
+      "longitude": 121.5434615,
+      "latitude": 25.02612
+    },
+    {
+      "id": "daan",
+      "officialId": "metro-taipei:SID:011",
+      "nameEn": "Daan",
+      "nameZh": "大安",
+      "codes": {
+        "BR": "BR09",
+        "R": "R05"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#9"
+      ],
+      "longitude": 121.54237,
+      "latitude": 25.033311
+    },
+    {
+      "id": "zhongxiao-fuxing",
+      "officialId": "metro-taipei:SID:010",
+      "nameEn": "Zhongxiao Fuxing",
+      "nameZh": "忠孝復興",
+      "codes": {
+        "BR": "BR10",
+        "BL": "BL15"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#10"
+      ],
+      "longitude": 121.545026,
+      "latitude": 25.041749
+    },
+    {
+      "id": "nanjing-fuxing",
+      "officialId": "metro-taipei:SID:009",
+      "nameEn": "Nanjing Fuxing",
+      "nameZh": "南京復興",
+      "codes": {
+        "BR": "BR11",
+        "G": "G16"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#66"
+      ],
+      "longitude": 121.544303,
+      "latitude": 25.052044
+    },
+    {
+      "id": "zhongshan-junior",
+      "officialId": "metro-taipei:SID:008",
+      "nameEn": "Zhongshan Junior High School",
+      "nameZh": "中山國中",
+      "codes": {
+        "BR": "BR12"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#11"
+      ],
+      "longitude": 121.544215,
+      "latitude": 25.06085
+    },
+    {
+      "id": "taipei-mrt:station:007",
+      "officialId": "metro-taipei:SID:007",
+      "nameEn": "Songshan Airport",
+      "nameZh": "松山機場",
+      "codes": {
+        "BR": "BR13"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#12"
+      ],
+      "longitude": 121.55201,
+      "latitude": 25.0629075
+    },
+    {
+      "id": "taipei-mrt:station:021",
+      "officialId": "metro-taipei:SID:021",
+      "nameEn": "Dazhi",
+      "nameZh": "大直",
+      "codes": {
+        "BR": "BR14"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#13"
+      ],
+      "longitude": 121.54679,
+      "latitude": 25.07943
+    },
+    {
+      "id": "taipei-mrt:station:022",
+      "officialId": "metro-taipei:SID:022",
+      "nameEn": "Jiannan Rd.",
+      "nameZh": "劍南路",
+      "codes": {
+        "BR": "BR15"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#14"
+      ],
+      "longitude": 121.5555825,
+      "latitude": 25.08483
+    },
+    {
+      "id": "taipei-mrt:station:023",
+      "officialId": "metro-taipei:SID:023",
+      "nameEn": "Xihu",
+      "nameZh": "西湖",
+      "codes": {
+        "BR": "BR16"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#15"
+      ],
+      "longitude": 121.567227,
+      "latitude": 25.08216
+    },
+    {
+      "id": "taipei-mrt:station:024",
+      "officialId": "metro-taipei:SID:024",
+      "nameEn": "Gangqian",
+      "nameZh": "港墘",
+      "codes": {
+        "BR": "BR17"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#16"
+      ],
+      "longitude": 121.57516,
+      "latitude": 25.08007
+    },
+    {
+      "id": "taipei-mrt:station:025",
+      "officialId": "metro-taipei:SID:025",
+      "nameEn": "Wende",
+      "nameZh": "文德",
+      "codes": {
+        "BR": "BR18"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#17"
+      ],
+      "longitude": 121.5849995,
+      "latitude": 25.078455
+    },
+    {
+      "id": "taipei-mrt:station:026",
+      "officialId": "metro-taipei:SID:026",
+      "nameEn": "Neihu",
+      "nameZh": "內湖",
+      "codes": {
+        "BR": "BR19"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#18"
+      ],
+      "longitude": 121.594363,
+      "latitude": 25.083675
+    },
+    {
+      "id": "taipei-mrt:station:027",
+      "officialId": "metro-taipei:SID:027",
+      "nameEn": "Dahu Park",
+      "nameZh": "大湖公園",
+      "codes": {
+        "BR": "BR20"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#19"
+      ],
+      "longitude": 121.602214,
+      "latitude": 25.083805
+    },
+    {
+      "id": "taipei-mrt:station:028",
+      "officialId": "metro-taipei:SID:028",
+      "nameEn": "Huzhou",
+      "nameZh": "葫洲",
+      "codes": {
+        "BR": "BR21"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#20"
+      ],
+      "longitude": 121.6071455,
+      "latitude": 25.07271
+    },
+    {
+      "id": "taipei-mrt:station:029",
+      "officialId": "metro-taipei:SID:029",
+      "nameEn": "Donghu",
+      "nameZh": "東湖",
+      "codes": {
+        "BR": "BR22"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#21"
+      ],
+      "longitude": 121.611535,
+      "latitude": 25.067455
+    },
+    {
+      "id": "taipei-mrt:station:030",
+      "officialId": "metro-taipei:SID:030",
+      "nameEn": "Nangang Software Park",
+      "nameZh": "南港軟體園區",
+      "codes": {
+        "BR": "BR23"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#22"
+      ],
+      "longitude": 121.615,
+      "latitude": 25.05992
+    },
+    {
+      "id": "taipei-mrt:station:031",
+      "officialId": "metro-taipei:SID:031",
+      "nameEn": "Taipei Nangang Exhibition Center",
+      "nameZh": "南港展覽館",
+      "codes": {
+        "BR": "BR24",
+        "BL": "BL23"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#23",
+        "stations.csv#24"
+      ],
+      "longitude": 121.616861,
+      "latitude": 25.054919
+    },
+    {
+      "id": "taipei-mrt:station:104",
+      "officialId": "metro-taipei:SID:104",
+      "nameEn": "Guangci/Fengtian Temple",
+      "nameZh": "廣慈/奉天宮",
+      "codes": {
+        "R": "R01"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#25"
+      ],
+      "longitude": 121.581789,
+      "latitude": 25.0375827
+    },
+    {
+      "id": "taipei-mrt:station:099",
+      "officialId": "metro-taipei:SID:099",
+      "nameEn": "Xiangshan",
+      "nameZh": "象山",
+      "codes": {
+        "R": "R02"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#26"
+      ],
+      "longitude": 121.570116,
+      "latitude": 25.032395
+    },
+    {
+      "id": "taipei-mrt:station:100",
+      "officialId": "metro-taipei:SID:100",
+      "nameEn": "Taipei 101/World Trade Center",
+      "nameZh": "台北101/世貿",
+      "codes": {
+        "R": "R03"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#27"
+      ],
+      "longitude": 121.563667,
+      "latitude": 25.032865
+    },
+    {
+      "id": "taipei-mrt:station:101",
+      "officialId": "metro-taipei:SID:101",
+      "nameEn": "Xinyi Anhe",
+      "nameZh": "信義安和",
+      "codes": {
+        "R": "R04"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#28"
+      ],
+      "longitude": 121.552326,
+      "latitude": 25.033015
+    },
+    {
+      "id": "daan-park",
+      "officialId": "metro-taipei:SID:103",
+      "nameEn": "Daan Park",
+      "nameZh": "大安森林公園",
+      "codes": {
+        "R": "R06"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#29"
+      ],
+      "longitude": 121.536151,
+      "latitude": 25.033225
+    },
+    {
+      "id": "dongmen",
+      "officialId": "metro-taipei:SID:134",
+      "nameEn": "Dongmen",
+      "nameZh": "東門",
+      "codes": {
+        "R": "R07",
+        "O": "O06"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#30"
+      ],
+      "longitude": 121.528766,
+      "latitude": 25.033894
+    },
+    {
+      "id": "chiang-kai-shek",
+      "officialId": "metro-taipei:SID:042",
+      "nameEn": "C.K.S. Memorial Hall",
+      "nameZh": "中正紀念堂",
+      "codes": {
+        "R": "R08",
+        "G": "G10"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#31"
+      ],
+      "longitude": 121.518273,
+      "latitude": 25.032767
+    },
+    {
+      "id": "ntu-hospital",
+      "officialId": "metro-taipei:SID:050",
+      "nameEn": "NTU Hospital",
+      "nameZh": "台大醫院",
+      "codes": {
+        "R": "R09"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#32"
+      ],
+      "longitude": 121.51602,
+      "latitude": 25.041399
+    },
+    {
+      "id": "taipei-main",
+      "officialId": "metro-taipei:SID:051",
+      "nameEn": "Taipei Main Station",
+      "nameZh": "台北車站",
+      "codes": {
+        "R": "R10",
+        "BL": "BL12"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#33"
+      ],
+      "longitude": 121.517415,
+      "latitude": 25.04631
+    },
+    {
+      "id": "zhongshan",
+      "officialId": "metro-taipei:SID:053",
+      "nameEn": "Zhongshan",
+      "nameZh": "中山",
+      "codes": {
+        "R": "R11",
+        "G": "G14"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#34"
+      ],
+      "longitude": 121.520364,
+      "latitude": 25.052621
+    },
+    {
+      "id": "shuanglian",
+      "officialId": "metro-taipei:SID:054",
+      "nameEn": "Shuanglian",
+      "nameZh": "雙連",
+      "codes": {
+        "R": "R12"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#35"
+      ],
+      "longitude": 121.520685,
+      "latitude": 25.057575
+    },
+    {
+      "id": "minquan-west",
+      "officialId": "metro-taipei:SID:055",
+      "nameEn": "Minquan W. Rd.",
+      "nameZh": "民權西路",
+      "codes": {
+        "R": "R13",
+        "O": "O11"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#36"
+      ],
+      "longitude": 121.519585,
+      "latitude": 25.06235
+    },
+    {
+      "id": "taipei-mrt:station:056",
+      "officialId": "metro-taipei:SID:056",
+      "nameEn": "Yuanshan",
+      "nameZh": "圓山",
+      "codes": {
+        "R": "R14"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#37"
+      ],
+      "longitude": 121.520074,
+      "latitude": 25.0714085
+    },
+    {
+      "id": "taipei-mrt:station:057",
+      "officialId": "metro-taipei:SID:057",
+      "nameEn": "Jiantan",
+      "nameZh": "劍潭",
+      "codes": {
+        "R": "R15"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#38"
+      ],
+      "longitude": 121.5249545,
+      "latitude": 25.0842015
+    },
+    {
+      "id": "taipei-mrt:station:058",
+      "officialId": "metro-taipei:SID:058",
+      "nameEn": "Shilin",
+      "nameZh": "士林",
+      "codes": {
+        "R": "R16"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#39"
+      ],
+      "longitude": 121.52623,
+      "latitude": 25.0934925
+    },
+    {
+      "id": "taipei-mrt:station:059",
+      "officialId": "metro-taipei:SID:059",
+      "nameEn": "Zhishan",
+      "nameZh": "芝山",
+      "codes": {
+        "R": "R17"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#40"
+      ],
+      "longitude": 121.522546,
+      "latitude": 25.102718
+    },
+    {
+      "id": "taipei-mrt:station:060",
+      "officialId": "metro-taipei:SID:060",
+      "nameEn": "Mingde",
+      "nameZh": "明德",
+      "codes": {
+        "R": "R18"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#41"
+      ],
+      "longitude": 121.518785,
+      "latitude": 25.109815
+    },
+    {
+      "id": "taipei-mrt:station:061",
+      "officialId": "metro-taipei:SID:061",
+      "nameEn": "Shipai",
+      "nameZh": "石牌",
+      "codes": {
+        "R": "R19"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#42"
+      ],
+      "longitude": 121.515572,
+      "latitude": 25.114455
+    },
+    {
+      "id": "taipei-mrt:station:062",
+      "officialId": "metro-taipei:SID:062",
+      "nameEn": "Qilian",
+      "nameZh": "唭哩岸",
+      "codes": {
+        "R": "R20"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#43"
+      ],
+      "longitude": 121.506234,
+      "latitude": 25.1208515
+    },
+    {
+      "id": "taipei-mrt:station:063",
+      "officialId": "metro-taipei:SID:063",
+      "nameEn": "Qiyan",
+      "nameZh": "奇岩",
+      "codes": {
+        "R": "R21"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#44"
+      ],
+      "longitude": 121.50114,
+      "latitude": 25.1254705
+    },
+    {
+      "id": "taipei-mrt:station:064",
+      "officialId": "metro-taipei:SID:064",
+      "nameEn": "Beitou",
+      "nameZh": "北投",
+      "codes": {
+        "R": "R22"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#45"
+      ],
+      "longitude": 121.4986475,
+      "latitude": 25.1318185
+    },
+    {
+      "id": "taipei-mrt:station:065",
+      "officialId": "metro-taipei:SID:065",
+      "nameEn": "Xinbeitou",
+      "nameZh": "新北投",
+      "codes": {
+        "R": "R22A"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#46"
+      ],
+      "longitude": 121.5025955,
+      "latitude": 25.1369315
+    },
+    {
+      "id": "taipei-mrt:station:066",
+      "officialId": "metro-taipei:SID:066",
+      "nameEn": "Fuxinggang",
+      "nameZh": "復興崗",
+      "codes": {
+        "R": "R23"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#47"
+      ],
+      "longitude": 121.485456,
+      "latitude": 25.137497
+    },
+    {
+      "id": "taipei-mrt:station:067",
+      "officialId": "metro-taipei:SID:067",
+      "nameEn": "Zhongyi",
+      "nameZh": "忠義",
+      "codes": {
+        "R": "R24"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#48"
+      ],
+      "longitude": 121.4732975,
+      "latitude": 25.1309225
+    },
+    {
+      "id": "taipei-mrt:station:068",
+      "officialId": "metro-taipei:SID:068",
+      "nameEn": "Guandu",
+      "nameZh": "關渡",
+      "codes": {
+        "R": "R25"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#49"
+      ],
+      "longitude": 121.467,
+      "latitude": 25.12551
+    },
+    {
+      "id": "taipei-mrt:station:069",
+      "officialId": "metro-taipei:SID:069",
+      "nameEn": "Zhuwei",
+      "nameZh": "竹圍",
+      "codes": {
+        "R": "R26"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#50"
+      ],
+      "longitude": 121.45955,
+      "latitude": 25.1369
+    },
+    {
+      "id": "taipei-mrt:station:070",
+      "officialId": "metro-taipei:SID:070",
+      "nameEn": "Hongshulin",
+      "nameZh": "紅樹林",
+      "codes": {
+        "R": "R27"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#51"
+      ],
+      "longitude": 121.4588,
+      "latitude": 25.15399
+    },
+    {
+      "id": "taipei-mrt:station:071",
+      "officialId": "metro-taipei:SID:071",
+      "nameEn": "Tamsui",
+      "nameZh": "淡水",
+      "codes": {
+        "R": "R28"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#52"
+      ],
+      "longitude": 121.445805,
+      "latitude": 25.167745
+    },
+    {
+      "id": "taipei-mrt:station:033",
+      "officialId": "metro-taipei:SID:033",
+      "nameEn": "Xindian",
+      "nameZh": "新店",
+      "codes": {
+        "G": "G01"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#53"
+      ],
+      "longitude": 121.53746,
+      "latitude": 24.95761
+    },
+    {
+      "id": "taipei-mrt:station:034",
+      "officialId": "metro-taipei:SID:034",
+      "nameEn": "Xindian District Office",
+      "nameZh": "新店區公所",
+      "codes": {
+        "G": "G02"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#54"
+      ],
+      "longitude": 121.5413,
+      "latitude": 24.96744
+    },
+    {
+      "id": "taipei-mrt:station:035",
+      "officialId": "metro-taipei:SID:035",
+      "nameEn": "Qizhang",
+      "nameZh": "七張",
+      "codes": {
+        "G": "G03"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#55"
+      ],
+      "longitude": 121.542985,
+      "latitude": 24.97545
+    },
+    {
+      "id": "taipei-mrt:station:032",
+      "officialId": "metro-taipei:SID:032",
+      "nameEn": "Xiaobitan",
+      "nameZh": "小碧潭",
+      "codes": {
+        "G": "G03A"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#56"
+      ],
+      "longitude": 121.53058,
+      "latitude": 24.97188
+    },
+    {
+      "id": "taipei-mrt:station:036",
+      "officialId": "metro-taipei:SID:036",
+      "nameEn": "Dapinglin",
+      "nameZh": "大坪林",
+      "codes": {
+        "G": "G04",
+        "Y": "Y07"
+      },
+      "operatorIds": [
+        "TRTC",
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#57",
+        "circular-page.html"
+      ],
+      "longitude": 121.54134,
+      "latitude": 24.9827205
+    },
+    {
+      "id": "taipei-mrt:station:037",
+      "officialId": "metro-taipei:SID:037",
+      "nameEn": "Jingmei",
+      "nameZh": "景美",
+      "codes": {
+        "G": "G05"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#58"
+      ],
+      "longitude": 121.5406975,
+      "latitude": 24.992824
+    },
+    {
+      "id": "taipei-mrt:station:038",
+      "officialId": "metro-taipei:SID:038",
+      "nameEn": "Wanlong",
+      "nameZh": "萬隆",
+      "codes": {
+        "G": "G06"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#59"
+      ],
+      "longitude": 121.539008,
+      "latitude": 25.001978
+    },
+    {
+      "id": "taipei-mrt:station:039",
+      "officialId": "metro-taipei:SID:039",
+      "nameEn": "Gongguan",
+      "nameZh": "公館",
+      "codes": {
+        "G": "G07"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#60"
+      ],
+      "longitude": 121.534358,
+      "latitude": 25.014781
+    },
+    {
+      "id": "taipei-mrt:station:040",
+      "officialId": "metro-taipei:SID:040",
+      "nameEn": "Taipower Building",
+      "nameZh": "台電大樓",
+      "codes": {
+        "G": "G08"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#61"
+      ],
+      "longitude": 121.5281435,
+      "latitude": 25.020733
+    },
+    {
+      "id": "taipei-mrt:station:041",
+      "officialId": "metro-taipei:SID:041",
+      "nameEn": "Guting",
+      "nameZh": "古亭",
+      "codes": {
+        "G": "G09",
+        "O": "O05"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#62"
+      ],
+      "longitude": 121.522868,
+      "latitude": 25.026373
+    },
+    {
+      "id": "xiaonanmen",
+      "officialId": "metro-taipei:SID:043",
+      "nameEn": "Xiaonanmen",
+      "nameZh": "小南門",
+      "codes": {
+        "G": "G11"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#63"
+      ],
+      "longitude": 121.51088,
+      "latitude": 25.035585
+    },
+    {
+      "id": "ximen",
+      "officialId": "metro-taipei:SID:086",
+      "nameEn": "Ximen",
+      "nameZh": "西門",
+      "codes": {
+        "G": "G12",
+        "BL": "BL11"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#101"
+      ],
+      "longitude": 121.508175,
+      "latitude": 25.042025
+    },
+    {
+      "id": "beimen",
+      "officialId": "metro-taipei:SID:105",
+      "nameEn": "Beimen",
+      "nameZh": "北門",
+      "codes": {
+        "G": "G13"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#64"
+      ],
+      "longitude": 121.510184,
+      "latitude": 25.049554
+    },
+    {
+      "id": "songjiang-nanjing",
+      "officialId": "metro-taipei:SID:132",
+      "nameEn": "Songjiang Nanjing",
+      "nameZh": "松江南京",
+      "codes": {
+        "G": "G15",
+        "O": "O08"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#65"
+      ],
+      "longitude": 121.53285,
+      "latitude": 25.052693
+    },
+    {
+      "id": "taipei-arena",
+      "officialId": "metro-taipei:SID:109",
+      "nameEn": "Taipei Arena",
+      "nameZh": "台北小巨蛋",
+      "codes": {
+        "G": "G17"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#67"
+      ],
+      "longitude": 121.552549,
+      "latitude": 25.05152
+    },
+    {
+      "id": "taipei-mrt:station:110",
+      "officialId": "metro-taipei:SID:110",
+      "nameEn": "Nanjing Sanmin",
+      "nameZh": "南京三民",
+      "codes": {
+        "G": "G18"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#68"
+      ],
+      "longitude": 121.56471,
+      "latitude": 25.051588
+    },
+    {
+      "id": "taipei-mrt:station:111",
+      "officialId": "metro-taipei:SID:111",
+      "nameEn": "Songshan",
+      "nameZh": "松山",
+      "codes": {
+        "G": "G19"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#69"
+      ],
+      "longitude": 121.577706,
+      "latitude": 25.050118
+    },
+    {
+      "id": "taipei-mrt:station:048",
+      "officialId": "metro-taipei:SID:048",
+      "nameEn": "Nanshijiao",
+      "nameZh": "南勢角",
+      "codes": {
+        "O": "O01"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#70"
+      ],
+      "longitude": 121.509237,
+      "latitude": 24.990065
+    },
+    {
+      "id": "taipei-mrt:station:047",
+      "officialId": "metro-taipei:SID:047",
+      "nameEn": "Jingan",
+      "nameZh": "景安",
+      "codes": {
+        "O": "O02",
+        "Y": "Y11"
+      },
+      "operatorIds": [
+        "TRTC",
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#71",
+        "circular-page.html"
+      ],
+      "longitude": 121.505114,
+      "latitude": 24.99392
+    },
+    {
+      "id": "taipei-mrt:station:046",
+      "officialId": "metro-taipei:SID:046",
+      "nameEn": "Yongan Market",
+      "nameZh": "永安市場",
+      "codes": {
+        "O": "O03"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#72"
+      ],
+      "longitude": 121.511225,
+      "latitude": 25.002895
+    },
+    {
+      "id": "taipei-mrt:station:045",
+      "officialId": "metro-taipei:SID:045",
+      "nameEn": "Dingxi",
+      "nameZh": "頂溪",
+      "codes": {
+        "O": "O04"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#73"
+      ],
+      "longitude": 121.515462,
+      "latitude": 25.013858
+    },
+    {
+      "id": "zhongxiao-xinsheng",
+      "officialId": "metro-taipei:SID:089",
+      "nameEn": "Zhongxiao Xinsheng",
+      "nameZh": "忠孝新生",
+      "codes": {
+        "O": "O07",
+        "BL": "BL14"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#103"
+      ],
+      "longitude": 121.53321,
+      "latitude": 25.042498
+    },
+    {
+      "id": "xingtian",
+      "officialId": "metro-taipei:SID:131",
+      "nameEn": "Xingtian Temple",
+      "nameZh": "行天宮",
+      "codes": {
+        "O": "O09"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#74"
+      ],
+      "longitude": 121.53315,
+      "latitude": 25.05924
+    },
+    {
+      "id": "zhongshan-elementary",
+      "officialId": "metro-taipei:SID:130",
+      "nameEn": "Zhongshan Elementary School",
+      "nameZh": "中山國小",
+      "codes": {
+        "O": "O10"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#75"
+      ],
+      "longitude": 121.526609,
+      "latitude": 25.062665
+    },
+    {
+      "id": "taipei-mrt:station:128",
+      "officialId": "metro-taipei:SID:128",
+      "nameEn": "Daqiaotou",
+      "nameZh": "大橋頭",
+      "codes": {
+        "O": "O12"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#76"
+      ],
+      "longitude": 121.5130035,
+      "latitude": 25.06322
+    },
+    {
+      "id": "taipei-mrt:station:127",
+      "officialId": "metro-taipei:SID:127",
+      "nameEn": "Taipei Bridge",
+      "nameZh": "台北橋",
+      "codes": {
+        "O": "O13"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#77"
+      ],
+      "longitude": 121.500575,
+      "latitude": 25.063075
+    },
+    {
+      "id": "taipei-mrt:station:126",
+      "officialId": "metro-taipei:SID:126",
+      "nameEn": "Cailiao",
+      "nameZh": "菜寮",
+      "codes": {
+        "O": "O14"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#78"
+      ],
+      "longitude": 121.491421,
+      "latitude": 25.059451
+    },
+    {
+      "id": "taipei-mrt:station:125",
+      "officialId": "metro-taipei:SID:125",
+      "nameEn": "Sanchong",
+      "nameZh": "三重",
+      "codes": {
+        "O": "O15"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#79"
+      ],
+      "longitude": 121.48422,
+      "latitude": 25.05571
+    },
+    {
+      "id": "taipei-mrt:station:124",
+      "officialId": "metro-taipei:SID:124",
+      "nameEn": "Xianse Temple",
+      "nameZh": "先嗇宮",
+      "codes": {
+        "O": "O16"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#80"
+      ],
+      "longitude": 121.47165,
+      "latitude": 25.04632
+    },
+    {
+      "id": "touqianzhuang",
+      "officialId": "metro-taipei:SID:123",
+      "nameEn": "Touqianzhuang",
+      "nameZh": "頭前庄",
+      "codes": {
+        "O": "O17",
+        "Y": "Y18"
+      },
+      "operatorIds": [
+        "TRTC",
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#81",
+        "circular-page.html"
+      ],
+      "longitude": 121.461655,
+      "latitude": 25.039735
+    },
+    {
+      "id": "taipei-mrt:station:122",
+      "officialId": "metro-taipei:SID:122",
+      "nameEn": "Xinzhuang",
+      "nameZh": "新莊",
+      "codes": {
+        "O": "O18"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#82"
+      ],
+      "longitude": 121.45218,
+      "latitude": 25.03608
+    },
+    {
+      "id": "taipei-mrt:station:121",
+      "officialId": "metro-taipei:SID:121",
+      "nameEn": "Fu Jen University",
+      "nameZh": "輔大",
+      "codes": {
+        "O": "O19"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#83"
+      ],
+      "longitude": 121.435735,
+      "latitude": 25.03279
+    },
+    {
+      "id": "taipei-mrt:station:180",
+      "officialId": "metro-taipei:SID:180",
+      "nameEn": "Danfeng",
+      "nameZh": "丹鳳",
+      "codes": {
+        "O": "O20"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#84"
+      ],
+      "longitude": 121.422422,
+      "latitude": 25.029073
+    },
+    {
+      "id": "taipei-mrt:station:179",
+      "officialId": "metro-taipei:SID:179",
+      "nameEn": "Huilong",
+      "nameZh": "迴龍",
+      "codes": {
+        "O": "O21"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#85"
+      ],
+      "longitude": 121.411757,
+      "latitude": 25.022107
+    },
+    {
+      "id": "taipei-mrt:station:178",
+      "officialId": "metro-taipei:SID:178",
+      "nameEn": "Sanchong Elementary School",
+      "nameZh": "三重國小",
+      "codes": {
+        "O": "O50"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#86"
+      ],
+      "longitude": 121.49701,
+      "latitude": 25.070275
+    },
+    {
+      "id": "taipei-mrt:station:177",
+      "officialId": "metro-taipei:SID:177",
+      "nameEn": "Sanhe Junior High School",
+      "nameZh": "三和國中",
+      "codes": {
+        "O": "O51"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#87"
+      ],
+      "longitude": 121.486795,
+      "latitude": 25.07646
+    },
+    {
+      "id": "taipei-mrt:station:176",
+      "officialId": "metro-taipei:SID:176",
+      "nameEn": "St. Ignatius High School",
+      "nameZh": "徐匯中學",
+      "codes": {
+        "O": "O52"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#88"
+      ],
+      "longitude": 121.479945,
+      "latitude": 25.080485
+    },
+    {
+      "id": "taipei-mrt:station:175",
+      "officialId": "metro-taipei:SID:175",
+      "nameEn": "Sanmin Senior High School",
+      "nameZh": "三民高中",
+      "codes": {
+        "O": "O53"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#89"
+      ],
+      "longitude": 121.473365,
+      "latitude": 25.085425
+    },
+    {
+      "id": "taipei-mrt:station:174",
+      "officialId": "metro-taipei:SID:174",
+      "nameEn": "Luzhou",
+      "nameZh": "蘆洲",
+      "codes": {
+        "O": "O54"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#90"
+      ],
+      "longitude": 121.46471,
+      "latitude": 25.09152
+    },
+    {
+      "id": "taipei-mrt:station:076",
+      "officialId": "metro-taipei:SID:076",
+      "nameEn": "Dingpu",
+      "nameZh": "頂埔",
+      "codes": {
+        "BL": "BL01"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#91"
+      ],
+      "longitude": 121.4205,
+      "latitude": 24.96012
+    },
+    {
+      "id": "taipei-mrt:station:077",
+      "officialId": "metro-taipei:SID:077",
+      "nameEn": "Yongning",
+      "nameZh": "永寧",
+      "codes": {
+        "BL": "BL02"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#92"
+      ],
+      "longitude": 121.43613,
+      "latitude": 24.96682
+    },
+    {
+      "id": "taipei-mrt:station:078",
+      "officialId": "metro-taipei:SID:078",
+      "nameEn": "Tucheng",
+      "nameZh": "土城",
+      "codes": {
+        "BL": "BL03"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#93"
+      ],
+      "longitude": 121.44432,
+      "latitude": 24.97313
+    },
+    {
+      "id": "taipei-mrt:station:079",
+      "officialId": "metro-taipei:SID:079",
+      "nameEn": "Haishan",
+      "nameZh": "海山",
+      "codes": {
+        "BL": "BL04"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#94"
+      ],
+      "longitude": 121.44873,
+      "latitude": 24.985305
+    },
+    {
+      "id": "taipei-mrt:station:080",
+      "officialId": "metro-taipei:SID:080",
+      "nameEn": "Far Eastern Hospital",
+      "nameZh": "亞東醫院",
+      "codes": {
+        "BL": "BL05"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#95"
+      ],
+      "longitude": 121.452465,
+      "latitude": 24.99828
+    },
+    {
+      "id": "taipei-mrt:station:081",
+      "officialId": "metro-taipei:SID:081",
+      "nameEn": "Fuzhong",
+      "nameZh": "府中",
+      "codes": {
+        "BL": "BL06"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#96"
+      ],
+      "longitude": 121.459276,
+      "latitude": 25.008465
+    },
+    {
+      "id": "banqiao",
+      "officialId": "metro-taipei:SID:082",
+      "nameEn": "Banqiao",
+      "nameZh": "板橋",
+      "codes": {
+        "BL": "BL07"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#97"
+      ],
+      "longitude": 121.462305,
+      "latitude": 25.013825
+    },
+    {
+      "id": "taipei-mrt:station:083",
+      "officialId": "metro-taipei:SID:083",
+      "nameEn": "Xinpu",
+      "nameZh": "新埔",
+      "codes": {
+        "BL": "BL08"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#98"
+      ],
+      "longitude": 121.468055,
+      "latitude": 25.02327
+    },
+    {
+      "id": "taipei-mrt:station:084",
+      "officialId": "metro-taipei:SID:084",
+      "nameEn": "Jiangzicui",
+      "nameZh": "江子翠",
+      "codes": {
+        "BL": "BL09"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#99"
+      ],
+      "longitude": 121.47257,
+      "latitude": 25.030265
+    },
+    {
+      "id": "taipei-mrt:station:085",
+      "officialId": "metro-taipei:SID:085",
+      "nameEn": "Longshan Temple",
+      "nameZh": "龍山寺",
+      "codes": {
+        "BL": "BL10"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#100"
+      ],
+      "longitude": 121.500325,
+      "latitude": 25.03528
+    },
+    {
+      "id": "shandao",
+      "officialId": "metro-taipei:SID:088",
+      "nameEn": "Shandao Temple",
+      "nameZh": "善導寺",
+      "codes": {
+        "BL": "BL13"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#102"
+      ],
+      "longitude": 121.523885,
+      "latitude": 25.04468
+    },
+    {
+      "id": "zhongxiao-dunhua",
+      "officialId": "metro-taipei:SID:091",
+      "nameEn": "Zhongxiao Dunhua",
+      "nameZh": "忠孝敦化",
+      "codes": {
+        "BL": "BL16"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#104"
+      ],
+      "longitude": 121.55045,
+      "latitude": 25.041505
+    },
+    {
+      "id": "taipei-mrt:station:092",
+      "officialId": "metro-taipei:SID:092",
+      "nameEn": "S.Y.S. Memorial Hall",
+      "nameZh": "國父紀念館",
+      "codes": {
+        "BL": "BL17"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#105"
+      ],
+      "longitude": 121.557815,
+      "latitude": 25.04137
+    },
+    {
+      "id": "taipei-mrt:station:093",
+      "officialId": "metro-taipei:SID:093",
+      "nameEn": "Taipei City Hall",
+      "nameZh": "市政府",
+      "codes": {
+        "BL": "BL18"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#106"
+      ],
+      "longitude": 121.565685,
+      "latitude": 25.041135
+    },
+    {
+      "id": "taipei-mrt:station:094",
+      "officialId": "metro-taipei:SID:094",
+      "nameEn": "Yongchun",
+      "nameZh": "永春",
+      "codes": {
+        "BL": "BL19"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#107"
+      ],
+      "longitude": 121.5762,
+      "latitude": 25.040855
+    },
+    {
+      "id": "taipei-mrt:station:095",
+      "officialId": "metro-taipei:SID:095",
+      "nameEn": "Houshanpi",
+      "nameZh": "後山埤",
+      "codes": {
+        "BL": "BL20"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#108"
+      ],
+      "longitude": 121.58227,
+      "latitude": 25.044715
+    },
+    {
+      "id": "taipei-mrt:station:096",
+      "officialId": "metro-taipei:SID:096",
+      "nameEn": "Kunyang",
+      "nameZh": "昆陽",
+      "codes": {
+        "BL": "BL21"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#109"
+      ],
+      "longitude": 121.5932285,
+      "latitude": 25.0504585
+    },
+    {
+      "id": "taipei-mrt:station:097",
+      "officialId": "metro-taipei:SID:097",
+      "nameEn": "Nangang",
+      "nameZh": "南港",
+      "codes": {
+        "BL": "BL22"
+      },
+      "operatorIds": [
+        "TRTC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "stations.csv#110"
+      ],
+      "longitude": 121.60697,
+      "latitude": 25.052035
+    },
+    {
+      "id": "taipei-mrt:station:201",
+      "officialId": "metro-taipei:SID:201",
+      "nameEn": "Shisizhang",
+      "nameZh": "十四張",
+      "codes": {
+        "Y": "Y08"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:202",
+      "officialId": "metro-taipei:SID:202",
+      "nameEn": "Xiulang Bridge",
+      "nameZh": "秀朗橋",
+      "codes": {
+        "Y": "Y09"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:203",
+      "officialId": "metro-taipei:SID:203",
+      "nameEn": "Jingping",
+      "nameZh": "景平",
+      "codes": {
+        "Y": "Y10"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:205",
+      "officialId": "metro-taipei:SID:205",
+      "nameEn": "Zhonghe",
+      "nameZh": "中和",
+      "codes": {
+        "Y": "Y12"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:206",
+      "officialId": "metro-taipei:SID:206",
+      "nameEn": "Qiaohe",
+      "nameZh": "橋和",
+      "codes": {
+        "Y": "Y13"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:207",
+      "officialId": "metro-taipei:SID:207",
+      "nameEn": "Zhongyuan",
+      "nameZh": "中原",
+      "codes": {
+        "Y": "Y14"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:208",
+      "officialId": "metro-taipei:SID:208",
+      "nameEn": "Banxin",
+      "nameZh": "板新",
+      "codes": {
+        "Y": "Y15"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "circular-banqiao",
+      "officialId": "metro-taipei:SID:209",
+      "nameEn": "Banqiao",
+      "nameZh": "板橋",
+      "codes": {
+        "Y": "Y16"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "xinpu-minsheng",
+      "officialId": "metro-taipei:SID:210",
+      "nameEn": "Xinpu Minsheng",
+      "nameZh": "新埔民生",
+      "codes": {
+        "Y": "Y17"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:212",
+      "officialId": "metro-taipei:SID:212",
+      "nameEn": "Xingfu",
+      "nameZh": "幸福",
+      "codes": {
+        "Y": "Y19"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    },
+    {
+      "id": "taipei-mrt:station:213",
+      "officialId": "metro-taipei:SID:213",
+      "nameEn": "New Taipei Industrial Park",
+      "nameZh": "新北產業園區",
+      "codes": {
+        "Y": "Y20"
+      },
+      "operatorIds": [
+        "NTMC"
+      ],
+      "systemIds": [
+        "taipei-mrt"
+      ],
+      "operational": true,
+      "sourceRefs": [
+        "official-menu-en.json",
+        "official-menu-zh.json",
+        "circular-page.html"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "TRTC:BR-1:0",
+      "sourceRouteId": "BR-1",
+      "line": "BR",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#1",
+      "stations": [
+        "taipei-mrt:station:019",
+        "taipei-mrt:station:018",
+        "taipei-mrt:station:017",
+        "taipei-mrt:station:016",
+        "taipei-mrt:station:015",
+        "taipei-mrt:station:014",
+        "taipei-mrt:station:013",
+        "taipei-mrt:station:012",
+        "daan",
+        "zhongxiao-fuxing",
+        "nanjing-fuxing",
+        "zhongshan-junior",
+        "taipei-mrt:station:007",
+        "taipei-mrt:station:021",
+        "taipei-mrt:station:022",
+        "taipei-mrt:station:023",
+        "taipei-mrt:station:024",
+        "taipei-mrt:station:025",
+        "taipei-mrt:station:026",
+        "taipei-mrt:station:027",
+        "taipei-mrt:station:028",
+        "taipei-mrt:station:029",
+        "taipei-mrt:station:030",
+        "taipei-mrt:station:031"
+      ]
+    },
+    {
+      "id": "TRTC:BR-1:1",
+      "sourceRouteId": "BR-1",
+      "line": "BR",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#2",
+      "stations": [
+        "taipei-mrt:station:031",
+        "taipei-mrt:station:030",
+        "taipei-mrt:station:029",
+        "taipei-mrt:station:028",
+        "taipei-mrt:station:027",
+        "taipei-mrt:station:026",
+        "taipei-mrt:station:025",
+        "taipei-mrt:station:024",
+        "taipei-mrt:station:023",
+        "taipei-mrt:station:022",
+        "taipei-mrt:station:021",
+        "taipei-mrt:station:007",
+        "zhongshan-junior",
+        "nanjing-fuxing",
+        "zhongxiao-fuxing",
+        "daan",
+        "taipei-mrt:station:012",
+        "taipei-mrt:station:013",
+        "taipei-mrt:station:014",
+        "taipei-mrt:station:015",
+        "taipei-mrt:station:016",
+        "taipei-mrt:station:017",
+        "taipei-mrt:station:018",
+        "taipei-mrt:station:019"
+      ]
+    },
+    {
+      "id": "TRTC:R-1:0",
+      "sourceRouteId": "R-1",
+      "line": "R",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#3",
+      "stations": [
+        "taipei-mrt:station:104",
+        "taipei-mrt:station:099",
+        "taipei-mrt:station:100",
+        "taipei-mrt:station:101",
+        "daan",
+        "daan-park",
+        "dongmen",
+        "chiang-kai-shek",
+        "ntu-hospital",
+        "taipei-main",
+        "zhongshan",
+        "shuanglian",
+        "minquan-west",
+        "taipei-mrt:station:056",
+        "taipei-mrt:station:057",
+        "taipei-mrt:station:058",
+        "taipei-mrt:station:059",
+        "taipei-mrt:station:060",
+        "taipei-mrt:station:061",
+        "taipei-mrt:station:062",
+        "taipei-mrt:station:063",
+        "taipei-mrt:station:064",
+        "taipei-mrt:station:066",
+        "taipei-mrt:station:067",
+        "taipei-mrt:station:068",
+        "taipei-mrt:station:069",
+        "taipei-mrt:station:070",
+        "taipei-mrt:station:071"
+      ]
+    },
+    {
+      "id": "TRTC:R-1:1",
+      "sourceRouteId": "R-1",
+      "line": "R",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#4",
+      "stations": [
+        "taipei-mrt:station:071",
+        "taipei-mrt:station:070",
+        "taipei-mrt:station:069",
+        "taipei-mrt:station:068",
+        "taipei-mrt:station:067",
+        "taipei-mrt:station:066",
+        "taipei-mrt:station:064",
+        "taipei-mrt:station:063",
+        "taipei-mrt:station:062",
+        "taipei-mrt:station:061",
+        "taipei-mrt:station:060",
+        "taipei-mrt:station:059",
+        "taipei-mrt:station:058",
+        "taipei-mrt:station:057",
+        "taipei-mrt:station:056",
+        "minquan-west",
+        "shuanglian",
+        "zhongshan",
+        "taipei-main",
+        "ntu-hospital",
+        "chiang-kai-shek",
+        "dongmen",
+        "daan-park",
+        "daan",
+        "taipei-mrt:station:101",
+        "taipei-mrt:station:100",
+        "taipei-mrt:station:099",
+        "taipei-mrt:station:104"
+      ]
+    },
+    {
+      "id": "TRTC:R-2:0",
+      "sourceRouteId": "R-2",
+      "line": "R",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#5",
+      "stations": [
+        "daan",
+        "daan-park",
+        "dongmen",
+        "chiang-kai-shek",
+        "ntu-hospital",
+        "taipei-main",
+        "zhongshan",
+        "shuanglian",
+        "minquan-west",
+        "taipei-mrt:station:056",
+        "taipei-mrt:station:057",
+        "taipei-mrt:station:058",
+        "taipei-mrt:station:059",
+        "taipei-mrt:station:060",
+        "taipei-mrt:station:061",
+        "taipei-mrt:station:062",
+        "taipei-mrt:station:063",
+        "taipei-mrt:station:064"
+      ]
+    },
+    {
+      "id": "TRTC:R-2:1",
+      "sourceRouteId": "R-2",
+      "line": "R",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#6",
+      "stations": [
+        "taipei-mrt:station:064",
+        "taipei-mrt:station:063",
+        "taipei-mrt:station:062",
+        "taipei-mrt:station:061",
+        "taipei-mrt:station:060",
+        "taipei-mrt:station:059",
+        "taipei-mrt:station:058",
+        "taipei-mrt:station:057",
+        "taipei-mrt:station:056",
+        "minquan-west",
+        "shuanglian",
+        "zhongshan",
+        "taipei-main",
+        "ntu-hospital",
+        "chiang-kai-shek",
+        "dongmen",
+        "daan-park",
+        "daan"
+      ]
+    },
+    {
+      "id": "TRTC:R-3:0",
+      "sourceRouteId": "R-3",
+      "line": "R",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#7",
+      "stations": [
+        "taipei-mrt:station:064",
+        "taipei-mrt:station:065"
+      ]
+    },
+    {
+      "id": "TRTC:R-3:1",
+      "sourceRouteId": "R-3",
+      "line": "R",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#8",
+      "stations": [
+        "taipei-mrt:station:065",
+        "taipei-mrt:station:064"
+      ]
+    },
+    {
+      "id": "TRTC:G-1:0",
+      "sourceRouteId": "G-1",
+      "line": "G",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#9",
+      "stations": [
+        "taipei-mrt:station:033",
+        "taipei-mrt:station:034",
+        "taipei-mrt:station:035",
+        "taipei-mrt:station:036",
+        "taipei-mrt:station:037",
+        "taipei-mrt:station:038",
+        "taipei-mrt:station:039",
+        "taipei-mrt:station:040",
+        "taipei-mrt:station:041",
+        "chiang-kai-shek",
+        "xiaonanmen",
+        "ximen",
+        "beimen",
+        "zhongshan",
+        "songjiang-nanjing",
+        "nanjing-fuxing",
+        "taipei-arena",
+        "taipei-mrt:station:110",
+        "taipei-mrt:station:111"
+      ]
+    },
+    {
+      "id": "TRTC:G-1:1",
+      "sourceRouteId": "G-1",
+      "line": "G",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#10",
+      "stations": [
+        "taipei-mrt:station:111",
+        "taipei-mrt:station:110",
+        "taipei-arena",
+        "nanjing-fuxing",
+        "songjiang-nanjing",
+        "zhongshan",
+        "beimen",
+        "ximen",
+        "xiaonanmen",
+        "chiang-kai-shek",
+        "taipei-mrt:station:041",
+        "taipei-mrt:station:040",
+        "taipei-mrt:station:039",
+        "taipei-mrt:station:038",
+        "taipei-mrt:station:037",
+        "taipei-mrt:station:036",
+        "taipei-mrt:station:035",
+        "taipei-mrt:station:034",
+        "taipei-mrt:station:033"
+      ]
+    },
+    {
+      "id": "TRTC:G-2:0",
+      "sourceRouteId": "G-2",
+      "line": "G",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#11",
+      "stations": [
+        "taipei-mrt:station:040",
+        "taipei-mrt:station:041",
+        "chiang-kai-shek",
+        "xiaonanmen",
+        "ximen",
+        "beimen",
+        "zhongshan",
+        "songjiang-nanjing",
+        "nanjing-fuxing",
+        "taipei-arena",
+        "taipei-mrt:station:110",
+        "taipei-mrt:station:111"
+      ]
+    },
+    {
+      "id": "TRTC:G-2:1",
+      "sourceRouteId": "G-2",
+      "line": "G",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#12",
+      "stations": [
+        "taipei-mrt:station:111",
+        "taipei-mrt:station:110",
+        "taipei-arena",
+        "nanjing-fuxing",
+        "songjiang-nanjing",
+        "zhongshan",
+        "beimen",
+        "ximen",
+        "xiaonanmen",
+        "chiang-kai-shek",
+        "taipei-mrt:station:041",
+        "taipei-mrt:station:040"
+      ]
+    },
+    {
+      "id": "TRTC:G-3:0",
+      "sourceRouteId": "G-3",
+      "line": "G",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#13",
+      "stations": [
+        "taipei-mrt:station:035",
+        "taipei-mrt:station:032"
+      ]
+    },
+    {
+      "id": "TRTC:G-3:1",
+      "sourceRouteId": "G-3",
+      "line": "G",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#14",
+      "stations": [
+        "taipei-mrt:station:032",
+        "taipei-mrt:station:035"
+      ]
+    },
+    {
+      "id": "TRTC:O-1:0",
+      "sourceRouteId": "O-1",
+      "line": "O",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#15",
+      "stations": [
+        "taipei-mrt:station:048",
+        "taipei-mrt:station:047",
+        "taipei-mrt:station:046",
+        "taipei-mrt:station:045",
+        "taipei-mrt:station:041",
+        "dongmen",
+        "zhongxiao-xinsheng",
+        "songjiang-nanjing",
+        "xingtian",
+        "zhongshan-elementary",
+        "minquan-west",
+        "taipei-mrt:station:128",
+        "taipei-mrt:station:127",
+        "taipei-mrt:station:126",
+        "taipei-mrt:station:125",
+        "taipei-mrt:station:124",
+        "touqianzhuang",
+        "taipei-mrt:station:122",
+        "taipei-mrt:station:121",
+        "taipei-mrt:station:180",
+        "taipei-mrt:station:179"
+      ]
+    },
+    {
+      "id": "TRTC:O-1:1",
+      "sourceRouteId": "O-1",
+      "line": "O",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#16",
+      "stations": [
+        "taipei-mrt:station:179",
+        "taipei-mrt:station:180",
+        "taipei-mrt:station:121",
+        "taipei-mrt:station:122",
+        "touqianzhuang",
+        "taipei-mrt:station:124",
+        "taipei-mrt:station:125",
+        "taipei-mrt:station:126",
+        "taipei-mrt:station:127",
+        "taipei-mrt:station:128",
+        "minquan-west",
+        "zhongshan-elementary",
+        "xingtian",
+        "songjiang-nanjing",
+        "zhongxiao-xinsheng",
+        "dongmen",
+        "taipei-mrt:station:041",
+        "taipei-mrt:station:045",
+        "taipei-mrt:station:046",
+        "taipei-mrt:station:047",
+        "taipei-mrt:station:048"
+      ]
+    },
+    {
+      "id": "TRTC:O-2:0",
+      "sourceRouteId": "O-2",
+      "line": "O",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#17",
+      "stations": [
+        "taipei-mrt:station:048",
+        "taipei-mrt:station:047",
+        "taipei-mrt:station:046",
+        "taipei-mrt:station:045",
+        "taipei-mrt:station:041",
+        "dongmen",
+        "zhongxiao-xinsheng",
+        "songjiang-nanjing",
+        "xingtian",
+        "zhongshan-elementary",
+        "minquan-west",
+        "taipei-mrt:station:128",
+        "taipei-mrt:station:178",
+        "taipei-mrt:station:177",
+        "taipei-mrt:station:176",
+        "taipei-mrt:station:175",
+        "taipei-mrt:station:174"
+      ]
+    },
+    {
+      "id": "TRTC:O-2:1",
+      "sourceRouteId": "O-2",
+      "line": "O",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#18",
+      "stations": [
+        "taipei-mrt:station:174",
+        "taipei-mrt:station:175",
+        "taipei-mrt:station:176",
+        "taipei-mrt:station:177",
+        "taipei-mrt:station:178",
+        "taipei-mrt:station:128",
+        "minquan-west",
+        "zhongshan-elementary",
+        "xingtian",
+        "songjiang-nanjing",
+        "zhongxiao-xinsheng",
+        "dongmen",
+        "taipei-mrt:station:041",
+        "taipei-mrt:station:045",
+        "taipei-mrt:station:046",
+        "taipei-mrt:station:047",
+        "taipei-mrt:station:048"
+      ]
+    },
+    {
+      "id": "TRTC:BL-1:0",
+      "sourceRouteId": "BL-1",
+      "line": "BL",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#19",
+      "stations": [
+        "taipei-mrt:station:076",
+        "taipei-mrt:station:077",
+        "taipei-mrt:station:078",
+        "taipei-mrt:station:079",
+        "taipei-mrt:station:080",
+        "taipei-mrt:station:081",
+        "banqiao",
+        "taipei-mrt:station:083",
+        "taipei-mrt:station:084",
+        "taipei-mrt:station:085",
+        "ximen",
+        "taipei-main",
+        "shandao",
+        "zhongxiao-xinsheng",
+        "zhongxiao-fuxing",
+        "zhongxiao-dunhua",
+        "taipei-mrt:station:092",
+        "taipei-mrt:station:093",
+        "taipei-mrt:station:094",
+        "taipei-mrt:station:095",
+        "taipei-mrt:station:096",
+        "taipei-mrt:station:097",
+        "taipei-mrt:station:031"
+      ]
+    },
+    {
+      "id": "TRTC:BL-1:1",
+      "sourceRouteId": "BL-1",
+      "line": "BL",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#20",
+      "stations": [
+        "taipei-mrt:station:031",
+        "taipei-mrt:station:097",
+        "taipei-mrt:station:096",
+        "taipei-mrt:station:095",
+        "taipei-mrt:station:094",
+        "taipei-mrt:station:093",
+        "taipei-mrt:station:092",
+        "zhongxiao-dunhua",
+        "zhongxiao-fuxing",
+        "zhongxiao-xinsheng",
+        "shandao",
+        "taipei-main",
+        "ximen",
+        "taipei-mrt:station:085",
+        "taipei-mrt:station:084",
+        "taipei-mrt:station:083",
+        "banqiao",
+        "taipei-mrt:station:081",
+        "taipei-mrt:station:080",
+        "taipei-mrt:station:079",
+        "taipei-mrt:station:078",
+        "taipei-mrt:station:077",
+        "taipei-mrt:station:076"
+      ]
+    },
+    {
+      "id": "TRTC:BL-2:0",
+      "sourceRouteId": "BL-2",
+      "line": "BL",
+      "direction": 0,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#21",
+      "stations": [
+        "taipei-mrt:station:080",
+        "taipei-mrt:station:081",
+        "banqiao",
+        "taipei-mrt:station:083",
+        "taipei-mrt:station:084",
+        "taipei-mrt:station:085",
+        "ximen",
+        "taipei-main",
+        "shandao",
+        "zhongxiao-xinsheng",
+        "zhongxiao-fuxing",
+        "zhongxiao-dunhua",
+        "taipei-mrt:station:092",
+        "taipei-mrt:station:093",
+        "taipei-mrt:station:094",
+        "taipei-mrt:station:095",
+        "taipei-mrt:station:096",
+        "taipei-mrt:station:097",
+        "taipei-mrt:station:031"
+      ]
+    },
+    {
+      "id": "TRTC:BL-2:1",
+      "sourceRouteId": "BL-2",
+      "line": "BL",
+      "direction": 1,
+      "operatorId": "TRTC",
+      "sourceRef": "route-stations.csv#22",
+      "stations": [
+        "taipei-mrt:station:031",
+        "taipei-mrt:station:097",
+        "taipei-mrt:station:096",
+        "taipei-mrt:station:095",
+        "taipei-mrt:station:094",
+        "taipei-mrt:station:093",
+        "taipei-mrt:station:092",
+        "zhongxiao-dunhua",
+        "zhongxiao-fuxing",
+        "zhongxiao-xinsheng",
+        "shandao",
+        "taipei-main",
+        "ximen",
+        "taipei-mrt:station:085",
+        "taipei-mrt:station:084",
+        "taipei-mrt:station:083",
+        "banqiao",
+        "taipei-mrt:station:081",
+        "taipei-mrt:station:080"
+      ]
+    },
+    {
+      "id": "NTMC:Y:table",
+      "line": "Y",
+      "direction": 0,
+      "operatorId": "NTMC",
+      "sourceRef": "circular-page.html; official-map.webp",
+      "stations": [
+        "taipei-mrt:station:036",
+        "taipei-mrt:station:201",
+        "taipei-mrt:station:202",
+        "taipei-mrt:station:203",
+        "taipei-mrt:station:047",
+        "taipei-mrt:station:205",
+        "taipei-mrt:station:206",
+        "taipei-mrt:station:207",
+        "taipei-mrt:station:208",
+        "circular-banqiao",
+        "xinpu-minsheng",
+        "touqianzhuang",
+        "taipei-mrt:station:212",
+        "taipei-mrt:station:213"
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "from": "banqiao",
+      "to": "circular-banqiao",
+      "kind": "out-of-station",
+      "sourceRef": "official-map.webp: dotted out-of-station transfer symbols"
+    },
+    {
+      "from": "taipei-mrt:station:083",
+      "to": "xinpu-minsheng",
+      "kind": "out-of-station",
+      "sourceRef": "official-map.webp: dotted out-of-station transfer symbols"
+    }
+  ],
+  "layout": {
+    "taipei-mrt:station:019": {
+      "x": 2180,
+      "y": 2520,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:018": {
+      "x": 2050,
+      "y": 2520,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:017": {
+      "x": 1920,
+      "y": 2400,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:016": {
+      "x": 1920,
+      "y": 2280,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:015": {
+      "x": 1920,
+      "y": 2160,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:014": {
+      "x": 1800,
+      "y": 2040,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:013": {
+      "x": 1620,
+      "y": 2040,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:012": {
+      "x": 1440,
+      "y": 2000,
+      "labelSide": "right"
+    },
+    "daan": {
+      "x": 1440,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "zhongxiao-fuxing": {
+      "x": 1440,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "nanjing-fuxing": {
+      "x": 1440,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "zhongshan-junior": {
+      "x": 1440,
+      "y": 1300,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:007": {
+      "x": 1440,
+      "y": 1180,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:021": {
+      "x": 1440,
+      "y": 1060,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:022": {
+      "x": 1440,
+      "y": 940,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:023": {
+      "x": 1500,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:024": {
+      "x": 1680,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:025": {
+      "x": 1860,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:026": {
+      "x": 2040,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:027": {
+      "x": 2220,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:028": {
+      "x": 2280,
+      "y": 880,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:029": {
+      "x": 2280,
+      "y": 960,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:030": {
+      "x": 2280,
+      "y": 1040,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:031": {
+      "x": 2280,
+      "y": 1120,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:104": {
+      "x": 2280,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:099": {
+      "x": 2100,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:100": {
+      "x": 1920,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:101": {
+      "x": 1680,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "daan-park": {
+      "x": 1280,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "dongmen": {
+      "x": 1110,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "chiang-kai-shek": {
+      "x": 800,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "ntu-hospital": {
+      "x": 800,
+      "y": 1750,
+      "labelSide": "right"
+    },
+    "taipei-main": {
+      "x": 800,
+      "y": 1620,
+      "labelSide": "left"
+    },
+    "zhongshan": {
+      "x": 800,
+      "y": 1420,
+      "labelSide": "left"
+    },
+    "shuanglian": {
+      "x": 800,
+      "y": 1300,
+      "labelSide": "right"
+    },
+    "minquan-west": {
+      "x": 800,
+      "y": 1180,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:056": {
+      "x": 800,
+      "y": 1060,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:057": {
+      "x": 800,
+      "y": 940,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:058": {
+      "x": 800,
+      "y": 820,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:059": {
+      "x": 800,
+      "y": 700,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:060": {
+      "x": 800,
+      "y": 580,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:061": {
+      "x": 800,
+      "y": 460,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:062": {
+      "x": 740,
+      "y": 340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:063": {
+      "x": 620,
+      "y": 340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:064": {
+      "x": 500,
+      "y": 340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:065": {
+      "x": 500,
+      "y": 170,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:066": {
+      "x": 380,
+      "y": 340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:067": {
+      "x": 260,
+      "y": 340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:068": {
+      "x": 200,
+      "y": 280,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:069": {
+      "x": 200,
+      "y": 160,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:070": {
+      "x": 200,
+      "y": 40,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:071": {
+      "x": 200,
+      "y": -80,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:033": {
+      "x": 1500,
+      "y": 3000,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:034": {
+      "x": 1500,
+      "y": 2860,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:035": {
+      "x": 1500,
+      "y": 2720,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:032": {
+      "x": 1320,
+      "y": 2720,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:036": {
+      "x": 1500,
+      "y": 2580,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:037": {
+      "x": 1420,
+      "y": 2460,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:038": {
+      "x": 1300,
+      "y": 2340,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:039": {
+      "x": 1180,
+      "y": 2220,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:040": {
+      "x": 1060,
+      "y": 2100,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:041": {
+      "x": 940,
+      "y": 1980,
+      "labelSide": "left"
+    },
+    "xiaonanmen": {
+      "x": 500,
+      "y": 1870,
+      "labelSide": "right"
+    },
+    "ximen": {
+      "x": 500,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "beimen": {
+      "x": 500,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "songjiang-nanjing": {
+      "x": 1160,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "taipei-arena": {
+      "x": 1650,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:110": {
+      "x": 1860,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:111": {
+      "x": 2070,
+      "y": 1420,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:048": {
+      "x": 940,
+      "y": 2580,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:047": {
+      "x": 940,
+      "y": 2460,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:046": {
+      "x": 940,
+      "y": 2300,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:045": {
+      "x": 940,
+      "y": 2140,
+      "labelSide": "right"
+    },
+    "zhongxiao-xinsheng": {
+      "x": 1160,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "xingtian": {
+      "x": 1160,
+      "y": 1300,
+      "labelSide": "right"
+    },
+    "zhongshan-elementary": {
+      "x": 1080,
+      "y": 1180,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:128": {
+      "x": 560,
+      "y": 1180,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:127": {
+      "x": 360,
+      "y": 1180,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:126": {
+      "x": 240,
+      "y": 1300,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:125": {
+      "x": 240,
+      "y": 1420,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:124": {
+      "x": 240,
+      "y": 1540,
+      "labelSide": "left"
+    },
+    "touqianzhuang": {
+      "x": 100,
+      "y": 1740,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:122": {
+      "x": -20,
+      "y": 1860,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:121": {
+      "x": -140,
+      "y": 1980,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:180": {
+      "x": -260,
+      "y": 2100,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:179": {
+      "x": -260,
+      "y": 2220,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:178": {
+      "x": 440,
+      "y": 1060,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:177": {
+      "x": 440,
+      "y": 940,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:176": {
+      "x": 440,
+      "y": 820,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:175": {
+      "x": 440,
+      "y": 700,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:174": {
+      "x": 440,
+      "y": 580,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:076": {
+      "x": 350,
+      "y": 3000,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:077": {
+      "x": 350,
+      "y": 2860,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:078": {
+      "x": 350,
+      "y": 2720,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:079": {
+      "x": 350,
+      "y": 2580,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:080": {
+      "x": 350,
+      "y": 2460,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:081": {
+      "x": 350,
+      "y": 2340,
+      "labelSide": "right"
+    },
+    "banqiao": {
+      "x": 350,
+      "y": 2190,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:083": {
+      "x": 350,
+      "y": 2020,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:084": {
+      "x": 350,
+      "y": 1880,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:085": {
+      "x": 350,
+      "y": 1740,
+      "labelSide": "right"
+    },
+    "shandao": {
+      "x": 980,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "zhongxiao-dunhua": {
+      "x": 1620,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:092": {
+      "x": 1800,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:093": {
+      "x": 1980,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:094": {
+      "x": 2160,
+      "y": 1620,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:095": {
+      "x": 2280,
+      "y": 1500,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:096": {
+      "x": 2280,
+      "y": 1380,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:097": {
+      "x": 2280,
+      "y": 1250,
+      "labelSide": "right"
+    },
+    "taipei-mrt:station:201": {
+      "x": 1350,
+      "y": 2580,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:202": {
+      "x": 1230,
+      "y": 2530,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:203": {
+      "x": 1110,
+      "y": 2460,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:205": {
+      "x": 800,
+      "y": 2460,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:206": {
+      "x": 690,
+      "y": 2440,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:207": {
+      "x": 560,
+      "y": 2360,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:208": {
+      "x": 400,
+      "y": 2280,
+      "labelSide": "left"
+    },
+    "circular-banqiao": {
+      "x": 220,
+      "y": 2190,
+      "labelSide": "left"
+    },
+    "xinpu-minsheng": {
+      "x": 180,
+      "y": 2020,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:212": {
+      "x": 0,
+      "y": 1620,
+      "labelSide": "left"
+    },
+    "taipei-mrt:station:213": {
+      "x": -100,
+      "y": 1500,
+      "labelSide": "left"
+    }
+  },
+  "lines": [
+    {
+      "id": "BR",
+      "name": "Wenhu",
+      "zh": "文湖線",
+      "color": "#c48c32",
+      "operatorId": "TRTC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^BR[0-9]{2}[A-Z]?$"
+    },
+    {
+      "id": "R",
+      "name": "Tamsui–Xinyi",
+      "zh": "淡水信義線",
+      "color": "#e3002c",
+      "operatorId": "TRTC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^R[0-9]{2}[A-Z]?$"
+    },
+    {
+      "id": "G",
+      "name": "Songshan–Xindian",
+      "zh": "松山新店線",
+      "color": "#00865a",
+      "operatorId": "TRTC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^G[0-9]{2}[A-Z]?$"
+    },
+    {
+      "id": "O",
+      "name": "Zhonghe–Xinlu",
+      "zh": "中和新蘆線",
+      "color": "#f8b61d",
+      "operatorId": "TRTC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^O[0-9]{2}[A-Z]?$"
+    },
+    {
+      "id": "BL",
+      "name": "Bannan",
+      "zh": "板南線",
+      "color": "#0070bd",
+      "operatorId": "TRTC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^BL[0-9]{2}[A-Z]?$"
+    },
+    {
+      "id": "Y",
+      "name": "Circular",
+      "zh": "環狀線",
+      "color": "#f4d30e",
+      "operatorId": "NTMC",
+      "systemId": "taipei-mrt",
+      "codePattern": "^Y[0-9]{2}[A-Z]?$"
+    }
+  ],
+  "operators": [
+    {
+      "id": "TRTC",
+      "name": "Taipei Rapid Transit Corporation"
+    },
+    {
+      "id": "NTMC",
+      "name": "New Taipei Metro Corporation"
+    }
+  ],
+  "systems": [
+    {
+      "id": "taipei-mrt",
+      "name": "Taipei MRT",
+      "kind": "metro"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=c77e91bf-067c-475e-917b-545ff62b7d76",
+      "retrievedAt": "2026-10-16",
+      "description": "https://data.taipei/dataset/detail?id=1eefa68d-7c8d-491b-8e75-66a161947426"
+    },
+    {
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=e3c0e67f-5916-405f-ad9a-41f52a65c2d2",
+      "retrievedAt": "2026-10-16",
+      "description": "https://data.taipei/dataset/detail?id=8bf00fa8-86a5-437e-b5c7-9bc0fe0e2971"
+    },
+    {
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=cca16a48-2753-4d3d-9142-ce14f7f9fdd0",
+      "retrievedAt": "2026-10-16",
+      "description": "https://data.taipei/dataset/detail?id=733ff034-5a2b-442f-832a-c7d89add0ccb"
+    },
+    {
+      "url": "https://web.metro.taipei/apis/metrostationapi/menuline",
+      "retrievedAt": "2026-10-16",
+      "description": "POST {LineID:0,Lang:en/tw}; bilingual names and physical SID groupings"
+    },
+    {
+      "url": "https://www.ntmetro.com.tw/basic/?node=10138",
+      "retrievedAt": "2026-10-16",
+      "description": "Circular Line station table, Y07–Y20"
+    },
+    {
+      "url": "https://web.metro.taipei/pages2026/WebRouteMap",
+      "retrievedAt": "2026-10-16",
+      "description": "Current official diagram; interchanges, walking transfers and branch comparison"
+    }
+  ],
+  "validation": {
+    "topology": "source-compared",
+    "layout": "schematic",
+    "report": "SOURCE_REPORT.md"
+  }
+}

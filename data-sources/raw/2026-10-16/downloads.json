@@ -1,0 +1,17 @@
+[
+  {
+    "file": "data-sources/raw/2026-10-16/stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=c77e91bf-067c-475e-917b-545ff62b7d76",
+    "catalogue": "https://data.taipei/dataset/detail?id=1eefa68d-7c8d-491b-8e75-66a161947426"
+  },
+  {
+    "file": "data-sources/raw/2026-10-16/line-stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=e3c0e67f-5916-405f-ad9a-41f52a65c2d2",
+    "catalogue": "https://data.taipei/dataset/detail?id=8bf00fa8-86a5-437e-b5c7-9bc0fe0e2971"
+  },
+  {
+    "file": "data-sources/raw/2026-10-16/route-stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=cca16a48-2753-4d3d-9142-ce14f7f9fdd0",
+    "catalogue": "https://data.taipei/dataset/detail?id=733ff034-5a2b-442f-832a-c7d89add0ccb"
+  }
+]

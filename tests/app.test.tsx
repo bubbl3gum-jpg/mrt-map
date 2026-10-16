@@ -69,7 +69,7 @@ describe("handoff interaction", () => {
     fireEvent.click(screen.getByTitle("Select all loaded Wenhu stations"));
     expect(
       JSON.parse(localStorage.getItem("hustlen-mrt-demo-v1")!).available,
-    ).toHaveLength(4);
+    ).toHaveLength(24);
     fireEvent.change(screen.getByRole("textbox", { name: "Search stations" }), {
       target: { value: "BL12" },
     });

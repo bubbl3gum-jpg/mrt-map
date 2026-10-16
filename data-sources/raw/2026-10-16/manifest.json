@@ -1,0 +1,76 @@
+[
+  {
+    "file": "stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=c77e91bf-067c-475e-917b-545ff62b7d76",
+    "retrievedAt": "2026-10-16T06:39:42.023583+00:00",
+    "sha256": "dc2a2e5070eba123621190621d135f6cde55459c1042d7f942b9ef4a66146ab0"
+  },
+  {
+    "file": "stations-page.html",
+    "url": "https://data.taipei/dataset/detail?id=1eefa68d-7c8d-491b-8e75-66a161947426",
+    "retrievedAt": "2026-10-16T06:39:41.162824+00:00",
+    "sha256": "8959e7948c6b0e5319014d3863d6edaaa4f08259e0904be8c6eb9997e275b578"
+  },
+  {
+    "file": "line-stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=e3c0e67f-5916-405f-ad9a-41f52a65c2d2",
+    "retrievedAt": "2026-10-16T06:39:42.325635+00:00",
+    "sha256": "68c5c58e2a574d79e4dee32181dde678cb16be72df097cbf318ba95d4d02221b"
+  },
+  {
+    "file": "line-stations-page.html",
+    "url": "https://data.taipei/dataset/detail?id=8bf00fa8-86a5-437e-b5c7-9bc0fe0e2971",
+    "retrievedAt": "2026-10-16T06:39:41.608755+00:00",
+    "sha256": "1744f8cb10c1d9b3dbb2d72b85daac2e77ae6201922cf73713ec4f0e93ce17dc"
+  },
+  {
+    "file": "route-stations.csv",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=cca16a48-2753-4d3d-9142-ce14f7f9fdd0",
+    "retrievedAt": "2026-10-16T06:39:42.199188+00:00",
+    "sha256": "da251b57278f65a12c44be6f4675e8f246866baa19a08fee8a99afeb7b11ab47"
+  },
+  {
+    "file": "route-stations-page.html",
+    "url": "https://data.taipei/dataset/detail?id=733ff034-5a2b-442f-832a-c7d89add0ccb",
+    "retrievedAt": "2026-10-16T06:39:41.813236+00:00",
+    "sha256": "205609851fc76383aaf2ed8ec35a3a11c0b1fdec78081294fc525c6db9ffd54f"
+  },
+  {
+    "file": "official-menu-en.json",
+    "url": "https://web.metro.taipei/apis/metrostationapi/menuline",
+    "request": {
+      "LineID": "0",
+      "Lang": "en"
+    },
+    "retrievedAt": "2026-10-16T06:41:13.642668+00:00",
+    "sha256": "d10e62d99c369e7e31f623504974f5042547fcd84d0347f1ccd913a0e3c983d6"
+  },
+  {
+    "file": "official-menu-zh.json",
+    "url": "https://web.metro.taipei/apis/metrostationapi/menuline",
+    "request": {
+      "LineID": "0",
+      "Lang": "tw"
+    },
+    "retrievedAt": "2026-10-16T06:41:45.601957+00:00",
+    "sha256": "a27119e6eb057f0fccfb75599fe2d62f8c6230c463e97434497a6d02f0733d4f"
+  },
+  {
+    "file": "circular-page.html",
+    "url": "https://www.ntmetro.com.tw/basic/?node=10138",
+    "retrievedAt": "2026-10-16T06:38:56.624036+00:00",
+    "sha256": "983227a8374740c4f5cf95365cb2f8003e99e6b9beb36d9fb5cff06494fa99bb"
+  },
+  {
+    "file": "route-map.html",
+    "url": "https://web.metro.taipei/pages2026/WebRouteMap",
+    "retrievedAt": "2026-10-16T06:38:59.984003+00:00",
+    "sha256": "a9430695de8a55648cb4458b5643616d27846c758e97dfbfa8c190ff5a8ed51b"
+  },
+  {
+    "file": "official-map.webp",
+    "url": "https://web.metro.taipei/pages2026/images/routemap2026-TW.webp",
+    "retrievedAt": "2026-10-16T06:42:28.637753+00:00",
+    "sha256": "1106c349c2b7855317978ec82609c12e1a073862bc216146a875cd5c9f1bca40"
+  }
+]

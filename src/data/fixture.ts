@@ -4,7 +4,7 @@ const rows: [
   string,
   string,
   string,
-  Partial<Record<LineId, string>>,
+  Record<LineId, string>,
   number,
   number,
 ][] = [

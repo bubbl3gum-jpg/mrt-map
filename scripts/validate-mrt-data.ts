@@ -4,26 +4,34 @@ import {
   validateNetwork,
   compareTopology,
 } from "../src/utils/station-validation";
+import { readOfficialData } from "./official-data";
 const path = process.argv[2] ?? "src/data/official-network.json";
 if (process.argv[2] && !existsSync(path))
-  throw new Error(`Input file does not exist: ${path}`);
+  throw Error(`Input file does not exist: ${path}`);
 const n = existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : fixture;
 const errors = validateNetwork(n);
 const refIndex = process.argv.indexOf("--reference");
+let referenceComparison = "not run";
 if (refIndex >= 0) {
   const ref = JSON.parse(readFileSync(process.argv[refIndex + 1], "utf8"));
   errors.push(...validateNetwork(ref), ...compareTopology(n, ref));
+  referenceComparison = "explicit normalized reference";
+} else if (n.validation?.topology === "source-compared") {
+  errors.push(...compareTopology(n, readOfficialData().network));
+  referenceComparison = "pinned raw CSV/menu/operator table";
 }
 console.log(
   JSON.stringify(
     {
       status: n.status,
-      referenceComparison: refIndex >= 0 ? "executed; see errors" : "not run",
+      referenceComparison,
       stations: n.stations.length,
       routes: n.routes.length,
       errors,
-      officialTopologyVerified: false,
-      note: "Structural checks only. Compare route sequences and branches with official source records.",
+      sourceTopologyComparisonPassed:
+        referenceComparison !== "not run" && !errors.length,
+      layoutVerified: false,
+      note: "Source comparison is specific to the dated snapshots; layout remains an original schematic.",
     },
     null,
     2,

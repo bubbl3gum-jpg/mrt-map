@@ -1,0 +1,1473 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="zh-Hant-TW">
+
+    <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	臺北大眾捷運股份有限公司
+</title><meta name="description" content="臺北大眾捷運股份有限公司官網" />
+        <link rel="icon" type="image/png" href="/pages2026/images/favoricon.png">
+        <link href="/pages2026/css/webstyle.css?t=20261016143900"
+        rel="stylesheet" />
+        <link href="/pages2026/css/webroutemap.css?t=20261016143900"
+        rel="stylesheet" />
+        <link href="/pages2026/assets/autocomplete/autocomplete.css" rel="stylesheet" />
+        </head>
+
+    <body>
+        <form method="post" action="./WebRouteMap" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="BTQaeIBHL9hozAVFkVA4quXx+rF3YdbyxN17srQZReD9rG1Fxj/bkFQth2/bcT83qAiHx+kyrt/3bFehkFc/K1ygnhnq9RQesQNLlTTUewc=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="91CB87F0" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="rh4Q5shM9uIoxGVLERgQXSzas0cS46tscx9O+ukGyr7KLibSVvxHqQN18er87sAaDQ1w5v0zG+/sC2ERbL96yA69imxLV42I0fxiomAxrgGgappJvplODs4FZSish8pJYWgQk+ZNFP6HkM8AubakZw==" />
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <section class="routemap">
+                <div class="container">
+                    <div class="page__title section__title">路網圖</div>
+                    
+                    <div class="dropdownlist">
+                        <div class="dropdownlist-row">
+                            <span class="input_label">　搜尋車站：</span>
+                            <div class="autocomplete form-control search-input-wrapper">
+                                <input name="tbquerystation" type="text" id="tbquerystation" class="form-control search-input" placeholder="請輸入車站編號或名稱" />
+                            </div>
+                        </div>
+
+                        <div class="dropdownlist-row">
+                            <span class="input_label">請選擇車站：</span>
+                            <div class="stationlist">
+                                <select id="lineSelect" class="stationlist form-control line-select" title="請選擇線別">
+                                    <option value="none" disabled selected>請選擇線別</option>
+                                    <option value="BR">BR 文湖線</option>
+                                    <option value="R">R 淡水信義線</option>
+                                    <option value="G">G 松山新店線</option>
+                                    <option value="O">O 中和新蘆線</option>
+                                    <option value="BL">BL 板南線</option>
+                                    <option value="Y">Y 環狀線</option>
+                                </select>
+                            </div>
+                            
+<style>
+    .stationlist {
+        background: url(/pages2026/images/icon_navarrowdown.svg) no-repeat;
+        background-position: calc(100% - 0.75rem) center !important;
+        background-color: #FFF;
+        background-size: 15px 15px;
+    }
+    .stationlist select {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        font-size: 1.6rem;
+        height: 100%;
+        max-height: 100%;
+        padding-left: 1rem;
+    }
+</style>
+<div class="stationlist">
+<select name="stationlist" class="stationlist form-control" title="臺北捷運各路線車站選單">
+    <option disabled selected value="none">
+        <span id="StationDropListUCDeparture_lbPlaceholder">請選擇車站</span>
+    </option>
+    <optgroup class="lineBR__bg" label="BR 文湖線">
+        <option value="BR01">BR01 動物園</option>
+        <option value="BR02">BR02 木柵</option>
+        <option value="BR03">BR03 萬芳社區</option>
+        <option value="BR04">BR04 萬芳醫院</option>
+        <option value="BR05">BR05 辛亥</option>
+        <option value="BR06">BR06 麟光</option>
+        <option value="BR07">BR07 六張犁</option>
+        <option value="BR08">BR08 科技大樓</option>
+        <option value="BR09">BR09 大安</option>
+        <option value="BR10">BR10 忠孝復興</option>
+        <option value="BR11">BR11 南京復興</option>
+        <option value="BR12">BR12 中山國中</option>
+        <option value="BR13">BR13 松山機場</option>
+        <option value="BR14">BR14 大直</option>
+        <option value="BR15">BR15 劍南路</option>
+        <option value="BR16">BR16 西湖</option>
+        <option value="BR17">BR17 港墘</option>
+        <option value="BR18">BR18 文德</option>
+        <option value="BR19">BR19 內湖</option>
+        <option value="BR20">BR20 大湖公園</option>
+        <option value="BR21">BR21 葫洲</option>
+        <option value="BR22">BR22 東湖</option>
+        <option value="BR23">BR23 南港軟體園區</option>
+        <option value="BR24">BR24 南港展覽館</option>
+    </optgroup>
+    <optgroup class="lineR__bg" label="R 淡水信義線">
+        <option value="R01">R01 廣慈/奉天宮</option>
+        <option value="R02">R02 象山</option>
+        <option value="R03">R03 台北101/世貿</option>
+        <option value="R04">R04 信義安和</option>
+        <option value="R05">R05 大安</option>
+        <option value="R06">R06 大安森林公園</option>
+        <option value="R07">R07 東門</option>
+        <option value="R08">R08 中正紀念堂</option>
+        <option value="R09">R09 台大醫院</option>
+        <option value="R10">R10 台北車站</option>
+        <option value="R11">R11 中山</option>
+        <option value="R12">R12 雙連</option>
+        <option value="R13">R13 民權西路</option>
+        <option value="R14">R14 圓山</option>
+        <option value="R15">R15 劍潭</option>
+        <option value="R16">R16 士林</option>
+        <option value="R17">R17 芝山</option>
+        <option value="R18">R18 明德</option>
+        <option value="R19">R19 石牌</option>
+        <option value="R20">R20 唭哩岸</option>
+        <option value="R21">R21 奇岩</option>
+        <option value="R22">R22 北投</option>
+        <option value="R22A">R22A 新北投</option>
+        <option value="R23">R23 復興崗</option>
+        <option value="R24">R24 忠義</option>
+        <option value="R25">R25 關渡</option>
+        <option value="R26">R26 竹圍</option>
+        <option value="R27">R27 紅樹林</option>
+        <option value="R28">R28 淡水</option>
+    </optgroup>
+    <optgroup class="lineG__bg" label="G 松山新店線">
+        <option value="G01">G01 新店</option>
+        <option value="G02">G02 新店區公所</option>
+        <option value="G03">G03 七張</option>
+        <option value="G03A">G03A 小碧潭</option>
+        <option value="G04">G04 大坪林</option>
+        <option value="G05">G05 景美</option>
+        <option value="G06">G06 萬隆</option>
+        <option value="G07">G07 公館</option>
+        <option value="G08">G08 台電大樓</option>
+        <option value="G09">G09 古亭</option>
+        <option value="G10">G10 中正紀念堂</option>
+        <option value="G11">G11 小南門</option>
+        <option value="G12">G12 西門</option>
+        <option value="G13">G13 北門</option>
+        <option value="G14">G14 中山</option>
+        <option value="G15">G15 松江南京</option>
+        <option value="G16">G16 南京復興</option>
+        <option value="G17">G17 台北小巨蛋</option>
+        <option value="G18">G18 南京三民</option>
+        <option value="G19">G19 松山</option>
+    </optgroup>
+    <optgroup class="lineO__bg" label="O 中和新蘆線">
+        <option value="O01">O01 南勢角</option>
+        <option value="O02">O02 景安</option>
+        <option value="O03">O03 永安市場</option>
+        <option value="O04">O04 頂溪</option>
+        <option value="O05">O05 古亭</option>
+        <option value="O06">O06 東門</option>
+        <option value="O07">O07 忠孝新生</option>
+        <option value="O08">O08 松江南京</option>
+        <option value="O09">O09 行天宮</option>
+        <option value="O10">O10 中山國小</option>
+        <option value="O11">O11 民權西路</option>
+        <option value="O12">O12 大橋頭</option>
+        <option value="O13">O13 台北橋</option>
+        <option value="O14">O14 菜寮</option>
+        <option value="O15">O15 三重</option>
+        <option value="O16">O16 先嗇宮</option>
+        <option value="O17">O17 頭前庄</option>
+        <option value="O18">O18 新莊</option>
+        <option value="O19">O19 輔大</option>
+        <option value="O20">O20 丹鳳</option>
+        <option value="O21">O21 迴龍</option>
+        <option value="O50">O50 三重國小</option>
+        <option value="O51">O51 三和國中</option>
+        <option value="O52">O52 徐匯中學</option>
+        <option value="O53">O53 三民高中</option>
+        <option value="O54">O54 蘆洲</option>
+    </optgroup>
+    <optgroup class="lineBL__bg" label="BL 板南線">
+        <option value="BL01">BL01 頂埔</option>
+        <option value="BL02">BL02 永寧</option>
+        <option value="BL03">BL03 土城</option>
+        <option value="BL04">BL04 海山</option>
+        <option value="BL05">BL05 亞東醫院</option>
+        <option value="BL06">BL06 府中</option>
+        <option value="BL07">BL07 板橋</option>
+        <option value="BL08">BL08 新埔</option>
+        <option value="BL09">BL09 江子翠</option>
+        <option value="BL10">BL10 龍山寺</option>
+        <option value="BL11">BL11 西門</option>
+        <option value="BL12">BL12 台北車站</option>
+        <option value="BL13">BL13 善導寺</option>
+        <option value="BL14">BL14 忠孝新生</option>
+        <option value="BL15">BL15 忠孝復興</option>
+        <option value="BL16">BL16 忠孝敦化</option>
+        <option value="BL17">BL17 國父紀念館</option>
+        <option value="BL18">BL18 市政府</option>
+        <option value="BL19">BL19 永春</option>
+        <option value="BL20">BL20 後山埤</option>
+        <option value="BL21">BL21 昆陽</option>
+        <option value="BL22">BL22 南港</option>
+        <option value="BL23">BL23 南港展覽館</option>
+    </optgroup>
+    <optgroup class="lineY__bg" label="Y 環狀線">
+        <option value="Y07">Y07 大坪林</option>
+        <option value="Y08">Y08 十四張</option>
+        <option value="Y09">Y09 秀朗橋</option>
+        <option value="Y10">Y10 景平</option>
+        <option value="Y11">Y11 景安</option>
+        <option value="Y12">Y12 中和</option>
+        <option value="Y13">Y13 橋和</option>
+        <option value="Y14">Y14 中原</option>
+        <option value="Y15">Y15 板新</option>
+        <option value="Y16">Y16 板橋</option>
+        <option value="Y17">Y17 新埔民生</option>
+        <option value="Y18">Y18 頭前庄</option>
+        <option value="Y19">Y19 幸福</option>
+        <option value="Y20">Y20 新北產業園區</option>
+    </optgroup>
+</select>
+</div>
+                            <input type="submit" name="confirm_btn" value="確定" id="confirm_btn" />
+                        </div>
+                    </div>
+                    <p class="routemap__content">
+                        淡水信義線、松山新店線、中和新蘆線、板南線時刻表，請於本網頁點選車站後再點選「時刻表」開啟。<br />
+                        文湖線班次密集，隨時加發列車，故原系統設計無固定時刻表。<br />
+                        環狀線時刻表請參閱新北捷運公司官網（<a href="https://www.ntmetro.com.tw/" title="新北捷運公司官網"
+                            target="_blank">https://www.ntmetro.com.tw/</a>）
+                    </p>
+                    
+
+<style>
+    .roadmapselect-wrap {
+        max-width: 960px;
+        margin: 0 auto 2em;
+        position: relative;
+        border: 1px solid #000000;
+    }
+
+    .stationlink-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        /*        max-width: 960px;
+        margin: auto;*/
+    }
+
+        .stationlink-wrap button,
+        .stationlink-wrap a {
+            -webkit-appearance: none;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            position: absolute;
+            background-color: transparent;
+            /* opacity: 0.3; */
+/*            background-color: rgb(255, 216, 0,.3)*/
+        }
+
+    .closebtn {
+        position: absolute;
+        z-index: 10;
+        top: 1px;
+        right: 1px;
+        width: 40px;
+        height: 40px;
+        background-color: #F7F7F7;
+        cursor: pointer;
+    }
+
+    #BR01 {
+        left: 85%;
+        top: 78.61875%;
+        width: 4.895833333%;
+        height: 3.740625%;
+    }
+
+    #BR02 {
+        left: 80.2291666666667%;
+        top: 78.61875%;
+        width: 3.33333333333333%;
+        height: 3.740625%;
+    }
+
+    #BR03 {
+        left: 69.5416666666667%;
+        top: 78.125%;
+        width: 9.53333333333333%;
+        height: 2.003125%;
+    }
+
+    #BR04 {
+        left: 76.2958333333333%;
+        top: 74.878125%;
+        width: 9.575%;
+        height: 2.075%;
+    }
+
+    #BR05 {
+        left: 76.2916666666667%;
+        top: 71.41875%;
+        width: 6.11666666666667%;
+        height: 2.075%;
+    }
+
+    #BR06 {
+        left: 71.45%;
+        top: 69.33125%;
+        width: 3.95833333333333%;
+        height: 3.2625%;
+    }
+
+    #BR07 {
+        left: 64.5291666666667%;
+        top: 69.33125%;
+        width: 5.38333333333333%;
+        height: 3.2625%;
+    }
+
+    #BR08 {
+        left: 54.7833333333333%;
+        top: 67.278125%;
+        width: 9.02916666666667%;
+        height: 2.65625%;
+    }
+
+    #R05BR09 {
+        left: 60.3875%;
+        top: 62.74375%;
+        width: 7.05%;
+        height: 3.528125%;
+    }
+
+    #BL15BR10 {
+        left: 60.3875%;
+        top: 54.609375%;
+        width: 6%;
+        height: 4.609375%;
+    }
+
+    #G16BR11 {
+        left: 60.3875%;
+        top: 48.515625%;
+        width: 6.2%;
+        height: 4.596875%;
+    }
+
+    #BR12 {
+        left: 61.5208333333333%;
+        top: 46.5125%;
+        width: 9.2%;
+        height: 1.95625%;
+    }
+
+    #BR13 {
+        left: 61.5208333333333%;
+        top: 43.14375%;
+        width: 9.5%;
+        height: 2.065625%;
+    }
+
+    #BR14 {
+        left: 61.5208333333333%;
+        top: 39.828125%;
+        width: 12.7625%;
+        height: 1.965625%;
+    }
+
+    #BR15 {
+        left: 61.5208333333333%;
+        top: 36.525%;
+        width: 12.9625%;
+        height: 1.965625%;
+    }
+
+    #BR16 {
+        left: 62.025%;
+        top: 29.46875%;
+        width: 4.12916666666667%;
+        height: 5.75%;
+    }
+
+    #BR17 {
+        left: 67.5208333333333%;
+        top: 31.26875%;
+        width: 4.65416666666667%;
+        height: 3.95%;
+    }
+
+    #BR18 {
+        left: 73.4291666666667%;
+        top: 29.46875%;
+        width: 3.6375%;
+        height: 5.75%;
+    }
+
+    #BR19 {
+        left: 78.9291666666667%;
+        top: 31.26875%;
+        width: 3.9375%;
+        height: 3.95%;
+    }
+
+    #BR20 {
+        left: 84.6%;
+        top: 31.26875%;
+        width: 4.63333333333333%;
+        height: 3.75%;
+    }
+
+    #BR21 {
+        left: 89.4708333333333%;
+        top: 33.68125%;
+        width: 6.6625%;
+        height: 2.065625%;
+    }
+
+    #BR22 {
+        left: 89.4708333333333%;
+        top: 37.10625%;
+        width: 6.5625%;
+        height: 2.065625%;
+    }
+
+    #BR23 {
+        left: 78.3041666666667%;
+        top: 40.5%;
+        width: 13.6666666666667%;
+        height: 2.065625%;
+    }
+
+    #BL23BR24 {
+        left: 79.8458333333333%;
+        top: 43.80625%;
+        width: 13.2666666666667%;
+        height: 2.534375%;
+    }
+
+    #R28 {
+        left: 10.7916666666667%;
+        top: 5.246875%;
+        width: 6.00416666666667%;
+        height: 2.065625%;
+    }
+
+    #R27 {
+        left: 9.0333333333333%;
+        top: 9.196875%;
+        width: 7.5625%;
+        height: 2.065625%;
+    }
+
+    #R26 {
+        left: 10.7333333333333%;
+        top: 12.86875%;
+        width: 5.9625%;
+        height: 2.065625%;
+    }
+
+    #R25 {
+        left: 10.5333333333333%;
+        top: 16.40625%;
+        width: 6.1625%;
+        height: 2.065625%;
+    }
+
+    #R24 {
+        left: 11.0833333333333%;
+        top: 20.075%;
+        width: 6.6375%;
+        height: 2.265625%;
+    }
+
+    #R23 {
+        left: 19.0458333333333%;
+        top: 20.375%;
+        width: 5.47916666666667%;
+        height: 3.85%;
+    }
+
+    #R22 {
+        left: 25.3708333333333%;
+        top: 20.375%;
+        width: 3.525%;
+        height: 3.75%;
+    }
+
+    #R22A {
+        left: 24.425%;
+        top: 15.0625%;
+        width: 5%;
+        height: 4.05%;
+    }
+
+    #R21 {
+        left: 30.3416666666667%;
+        top: 20.375%;
+        width: 3.62083333333333%;
+        height: 3.75%;
+    }
+
+    #R20 {
+        left: 35.9958333333333%;
+        top: 19.875%;
+        width: 17.47083333333333%;
+        height: 2.35%;
+    }
+
+    #R19 {
+        left: 38.6125%;
+        top: 22.984375%;
+        width: 10.0625%;
+        height: 2.065625%;
+    }
+
+    #R18 {
+        left: 38.6125%;
+        top: 26.321875%;
+        width: 6.0625%;
+        height: 2.065625%;
+    }
+
+    #R17 {
+        left: 38.6125%;
+        top: 29.615625%;
+        width: 6.2625%;
+        height: 2.065625%;
+    }
+
+    #R16 {
+        left: 38.6125%;
+        top: 32.953125%;
+        width: 6.0625%;
+        height: 1.965625%;
+    }
+
+    #R15 {
+        left: 38.6125%;
+        top: 36.16875%;
+        width: 13.0625%;
+        height: 1.965625%;
+    }
+
+    #R14 {
+        left: 38.6125%;
+        top: 39.428125%;
+        width: 7.0625%;
+        height: 1.935625%;
+    }
+
+    #O11R13 {
+        left: 37.1666666666667%;
+        top: 41.944375%;
+        width: 7.39583333333333%;
+        height: 4.253125%;
+    }
+
+    #R12 {
+        left: 28.8541666666667%;
+        top: 47.43125%;
+        width: 12.083333%;
+        height: 2.165625%;
+    }
+
+    #G14R11 {
+        left: 37.2666666666667%;
+        top: 49.773125%;
+        width: 7.30833333333333%;
+        height: 3.359375%;
+    }
+
+    #BL12R10 {
+        left: 37.2666666666667%;
+        top: 53.359375%;
+        width: 5.37916666666667%;
+        height: 5.859375%;
+    }
+
+    #R09 {
+        left: 34.8875%;
+        top: 60.56875%;
+        width: 6.1%;
+        height: 2.165625%;
+    }
+
+    #G10R08 {
+        left: 35.2291666666667%;
+        top: 64.060625%;
+        width: 7.0%;
+        height: 5.609375%;
+    }
+
+    #R07O06 {
+        left: 46.6541666666667%;
+        top: 62.64375%;
+        width: 6.15%;
+        height: 3.528125%;
+    }
+
+    #R06 {
+        left: 53.1166666666667%;
+        top: 61.715625%;
+        width: 6.65%;
+        height: 4.35625%;
+    }
+
+    #R04 {
+        left: 68.4875%;
+        top: 62.665625%;
+        width: 3.85416666666667%;
+        height: 3.528125%;
+    }
+
+    #R03 {
+        left: 72.9541666666667%;
+        top: 64.146875%;
+        width: 6.62916666666667%;
+        height: 3.253125%;
+    }
+
+    #R02 {
+        left: 80.9958333333333%;
+        top: 62.665625%;
+        width: 3.67083333333333%;
+        height: 3.328125%;
+    }
+
+    #R01 {
+        left: 84.8958333333333%;
+        top: 64.14375%;
+        width: 9.37083333333333%;
+        height: 4.428125%;
+    }
+
+    #G01 {
+        left: 64.1375%;
+        top: 93.23125%;
+        width: 9.9375%;
+        height: 1.865625%;
+    }
+
+    #G02 {
+        left: 64.1375%;
+        top: 89.859375%;
+        width: 10.4416666666667%;
+        height: 1.965625%;
+    }
+
+    #G03 {
+        left: 64.1375%;
+        top: 86.409375%;
+        width: 6.14583333333333%;
+        height: 2.065625%;
+    }
+
+    #G03A {
+        left: 56.5458333333333%;
+        top: 86.409375%;
+        width: 6.5875%;
+        height: 4.41875%;
+    }
+
+    #G04Y07 {
+        left: 62.7916666666667%;
+        top: 82.25625%;
+        width: 10.16666666666667%;
+        height: 2.065625%;
+    }
+
+    #G05 {
+        left: 60.375%;
+        top: 78.4375%;
+        width: 6.23333333333333%;
+        height: 2.021875%;
+    }
+
+    #G06 {
+        left: 56.7291666666667%;
+        top: 75.9125%;
+        width: 6.44583333333333%;
+        height: 2.021875%;
+    }
+
+    #G07 {
+        left: 52.6875%;
+        top: 73.246875%;
+        width: 12.97916666666667%;
+        height: 2.021875%;
+    }
+
+    #G08 {
+        left: 48.65%;
+        top: 70.56875%;
+        width: 8.9875%;
+        height: 2.04375%;
+    }
+
+    #G09O05 {
+        left: 42.6458333333333%;
+        top: 67.578125%;
+        width: 8.22916666666667%;
+        height: 2.04375%;
+    }
+
+    #G11 {
+        left: 29.325%;
+        top: 63.515625%;
+        width: 4.3%;
+        height: 2.765625%;
+    }
+
+    #BL11G12 {
+        left: 26.8416666666667%;
+        top: 56.08125%;
+        width: 7.1%;
+        height: 2.9375%;
+    }
+
+    #G13 {
+        left: 26.7083333333333%;
+        top: 53.48125%;
+        width: 5.99166666666667%;
+        height: 2.065625%;
+    }
+
+    #G15O08 {
+        left: 49.0791666666667%;
+        top: 49.599375%;
+        width: 10.375%;
+        height: 3.553125%;
+    }
+
+    #G17 {
+        left: 66.725%;
+        top: 50.9375%;
+        width: 6.47916666666667%;
+        height: 3.271875%;
+    }
+
+    #G18 {
+        left: 73.3083333333333%;
+        top: 49.615625%;
+        width: 6.4625%;
+        height: 3.296875%;
+    }
+
+    #G19 {
+        left: 81.1833333333333%;
+        top: 49.715625%;
+        width: 3.66666666666667%;
+        height: 3.196875%;
+    }
+
+    #O01 {
+        left: 38.5208333333333%;
+        top: 82.325%;
+        width: 7.58333333333333%;
+        height: 1.965625%;
+    }
+
+    #Y11O02 {
+        left: 42.5625%;
+        top: 77.59%;
+        width: 6.75%;
+        height: 3.2625%;
+    }
+
+    #O03 {
+        left: 36.7625%;
+        top: 74.66875%;
+        width: 9.325%;
+        height: 1.875%;
+    }
+
+    #O04 {
+        left: 40.2833333333333%;
+        top: 71.53125%;
+        width: 5.82083333333333%;
+        height: 1.965625%;
+    }
+
+    #BL14O07 {
+        left: 49.0791666666667%;
+        top: 54.809375%;
+        width: 9.95833333333333%;
+        height: 4.309375%;
+    }
+
+    #O09 {
+        left: 50.4291666666667%;
+        top: 46.5375%;
+        width: 7.64583333333333%;
+        height: 1.865625%;
+    }
+
+    #O10 {
+        left: 46.5875%;
+        top: 41.778125%;
+        width: 6.59166666666667%;
+        height: 4.203125%;
+    }
+
+    #O12 {
+        left: 30.0%;
+        top: 41.73125%;
+        width: 6.7%;
+        height: 4.19%;
+    }
+
+    #O13 {
+        left: 22.1958333333333%;
+        top: 42.95%;
+        width: 4.89166666666667%;
+        height: 2.95625%;
+    }
+
+    #O14 {
+        left: 17.4458333333333%;
+        top: 45.975%;
+        width: 15.8125%;
+        height: 1.35625%;
+    }
+
+    #O15 {
+        left: 17.4458333333333%;
+        top: 48.734375%;
+        width: 5.7125%;
+        height: 2.384375%;
+    }
+
+    #O16 {
+        left: 17.4458333333333%;
+        top: 53.009375%;
+        width: 7.22916666666667%;
+        height: 1.85625%;
+    }
+
+    #Y18O17 {
+        left: 4.24583333333333%;
+        top: 56.559375%;
+        width: 17.05%;
+        height: 2.0421875%;
+    }
+
+    #O18 {
+        left: 12.56666666666667%;
+        top: 59.421875%;
+        width: 8.875%;
+        height: 2.378125%;
+    }
+
+    #O19 {
+        left: 8.54166666666667%;
+        top: 61.951875%;
+        width: 6.875%;
+        height: 1.646875%;
+    }
+
+    #O20 {
+        left: 4.74166666666667%;
+        top: 64.078125%;
+        width: 5.775%;
+        height: 1.765625%;
+    }
+
+    #O21 {
+        left: 4.14166666666667%;
+        top: 67.371875%;
+        width: 9.275%;
+        height: 1.865625%;
+    }
+
+    #O50 {
+        left: 20.4958333333333%;
+        top: 40.3125%;
+        width: 8.99166666666667%;
+        height: 1.76875%;
+    }
+
+    #O51 {
+        left: 20.4583333333333%;
+        top: 37.0125%;
+        width: 9.1375%;
+        height: 1.74375%;
+    }
+
+    #O52 {
+        left: 20.2625%;
+        top: 33.709375%;
+        width: 9.1375%;
+        height: 1.74375%;
+    }
+
+    #O53 {
+        left: 20.2625%;
+        top: 29.98125%;
+        width: 9.1375%;
+        height: 2.34375%;
+    }
+
+    #O54 {
+        left: 20.2625%;
+        top: 26.753125%;
+        width: 9.23333333333333%;
+        height: 2.24375%;
+    }
+
+    #BL01 {
+        left: 21.8083333333333%;
+        top: 94.76875%;
+        width: 5.57083333333333%;
+        height: 1.965625%;
+    }
+
+    #BL02 {
+        left: 17.9083333333333%;
+        top: 90.73125%;
+        width: 6.07083333333333%;
+        height: 1.765625%;
+    }
+
+    #BL03 {
+        left: 17.9083333333333%;
+        top: 86.6375%;
+        width: 6.07083333333333%;
+        height: 1.765625%;
+    }
+
+    #BL04 {
+        left: 14.9083333333333%;
+        top: 82.6%;
+        width: 9.07083333333333%;
+        height: 2.165625%;
+    }
+
+    #BL05 {
+        left: 14.75%;
+        top: 78.39375%;
+        width: 9.22916666666667%;
+        height: 2.390625%;
+    }
+
+    #BL06 {
+        left: 14.85%;
+        top: 74.478125%;
+        width: 9.07083333333333%;
+        height: 2.265625%;
+    }
+
+    #BL07 {
+        left: 18.2083333333333%;
+        top: 70.55%;
+        width: 5.77083333333333%;
+        height: 1.765625%;
+    }
+
+    #BL08 {
+        left: 21.6875%;
+        top: 66.6875%;
+        width: 12.37083333333333%;
+        height: 1.765625%;
+    }
+
+    #BL09 {
+        left: 21.6875%;
+        top: 63.015625%;
+        width: 7.17083333333333%;
+        height: 1.965625%;
+    }
+
+    #BL10 {
+        left: 21.7875%;
+        top: 59.146875%;
+        width: 8.85833333333333%;
+        height: 2.09375%;
+    }
+
+    #BL13 {
+        left: 42.8541666666667%;
+        top: 57.285625%;
+        width: 5.81666666666667%;
+        height: 2.85%;
+    }
+
+    #BL16 {
+        left: 66.6875%;
+        top: 57.3875%;
+        width: 6.04166666666667%;
+        height: 3.65%;
+    }
+
+    #BL17 {
+        left: 73.1375%;
+        top: 55.809375%;
+        width: 6.2%;
+        height: 3.153125%;
+    }
+
+    #BL18 {
+        left: 79.65%;
+        top: 57.265625%;
+        width: 5.025%;
+        height: 3.05%;
+    }
+
+    #BL19 {
+        left: 86.5%;
+        top: 57.265625%;
+        width: 3.23625%;
+        height: 2.95%;
+    }
+
+    #BL20 {
+        left: 90.0083333333333%;
+        top: 54.665625%;
+        width: 7.38333333333333%;
+        height: 3.165625%;
+    }
+
+    #BL21 {
+        left: 89.7083333333333%;
+        top: 51.075%;
+        width: 6.5625%;
+        height: 1.965625%;
+    }
+
+    #BL22 {
+        left: 89.7083333333333%;
+        top: 47.58125%;
+        width: 6.8625%;
+        height: 2.065625%;
+    }
+
+    #Y08 {
+        left: 56.2291666666667%;
+        top: 81.215625%;
+        width: 4.77083333333333%;
+        height: 3.00625%;
+    }
+
+    #Y09 {
+        left: 47.0666666666667%;
+        top: 81.0625%;
+        width: 7.3375%;
+        height: 1.865625%;
+    }
+
+    #Y10 {
+        left: 50.1416666666667%;
+        top: 78.78125%;
+        width: 5.93333333333333%;
+        height: 1.825%;
+    }
+
+    #Y12 {
+        left: 34.6166666666667%;
+        top: 78.88125%;
+        width: 6.25%;
+        height: 2.090625%;
+    }
+
+    #Y13 {
+        left: 30.8875%;
+        top: 77.153125%;
+        width: 5.83333333333333%;
+        height: 1.621875%;
+    }
+
+    #Y14 {
+        left: 27.5875%;
+        top: 74.79375%;
+        width: 5.76666666666667%;
+        height: 1.821875%;
+    }
+
+    #Y15 {
+        left: 27.8416666666667%;
+        top: 72.5375%;
+        width: 5.83333333333333%;
+        height: 1.821875%;
+    }
+
+    #Y16 {
+        left: 24.5%;
+        top: 70.525%;
+        width: 5.83333333333333%;
+        height: 1.80625%;
+    }
+
+    #Y17 {
+        left: 15.6208333333333%;
+        top: 66.8%;
+        width: 5.55%;
+        height: 2.565625%;
+    }
+
+    #Y19 {
+        left: 8.68333333333333%;
+        top: 53.690625%;
+        width: 5.4125%;
+        height: 1.765625%;
+    }
+
+    #Y20 {
+        left: 8.3125%;
+        top: 50.346875%;
+        width: 8.42916666666667%;
+        height: 2.228125%;
+    }
+
+    #DLRT {
+        left: 17.2125%;
+        top: 1.99375%;
+        width: 40.9916666666667%;
+        height: 9.8875%;
+    }
+
+    #ALRT1 {
+        left: 55.1041666666667%;
+        top: 84.55625%;
+        width: 9.24583333333333%;
+        height: 1.61875%;
+    }
+
+    #ALRT2 {
+        left: 46.5083333333333%;
+        top: 84.55625%;
+        width: 8.5583333333333%;
+        height: 7.375%;
+    }
+
+    #ALRT3 {
+        left: 30.7083333333333%;
+        top: 92.03125%;
+        width: 27.825%;
+        height: 5.4375%;
+    }
+
+    #tymetroA1 {
+        left: 33.8558333333333%;
+        top: 53.559375%;
+        width: 2.5%;
+        height: 4.296875%;
+    }
+
+    #tymetroA2 {
+        left: 20.8958333333333%;
+        top: 51.21625%;
+        width: 3.479167%;
+        height: 1.1%;
+    }
+
+    #tymetroOther {
+        left: 3.029167%;
+        top: 22.8625%;
+        width: 13.1458333333333%;
+        height: 26.971875%;
+    }
+
+    #tymetroOther2 {
+        left: 3.029167%;
+        top: 17.2625%;
+        width: 5.1458333333333%;
+        height: 5.521875%;
+    }
+
+    #tcap {
+        left: 31.825%;
+        top: 32.015625%;
+        width: 6.05416666666667%;
+        height: 4.871875%;
+    }
+
+    #gondola {
+        left: 79.6041666666667%;
+        top: 82.59375%;
+        width: 15.8333333333333%;
+        height: 11.284375%;
+    }
+
+    #sanying1 {
+        left: 3.1041666666667%;
+        top: 72.59375%;
+        width: 10.8333333333333%;
+        height: 25.884375%;
+    }
+    #sanying2 {
+        left: 14.0041666666667%;
+        top: 93.29375%;
+        width: 7.2333333333333%;
+        height: 5.224375%;
+    }
+</style>
+        
+<div class="roadmapselect-wrap">
+    <button hidden="True" (click)="closeRoadmap()" class="closebtn" [title]="'按我關閉' | translate: lang">
+        <svg width="90%" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+        </svg>
+    </button>
+    <img src="/pages2026/images/routemap2026-TW.webp" alt="{{handleTitleByLang('路網圖')}}" useMap="#FPMap1" title="{{handleTitleByLang('路網圖')}}">
+    <div class="stationlink-wrap">
+        
+                <button onclick="handleRoadmapMapLink('019')"  id="BR01" title="BR01動物園"></button>
+            
+                <button onclick="handleRoadmapMapLink('018')"  id="BR02" title="BR02木柵"></button>
+            
+                <button onclick="handleRoadmapMapLink('017')"  id="BR03" title="BR03萬芳社區"></button>
+            
+                <button onclick="handleRoadmapMapLink('016')"  id="BR04" title="BR04萬芳醫院"></button>
+            
+                <button onclick="handleRoadmapMapLink('015')"  id="BR05" title="BR05辛亥"></button>
+            
+                <button onclick="handleRoadmapMapLink('014')"  id="BR06" title="BR06麟光"></button>
+            
+                <button onclick="handleRoadmapMapLink('013')"  id="BR07" title="BR07六張犁"></button>
+            
+                <button onclick="handleRoadmapMapLink('012')"  id="BR08" title="BR08科技大樓"></button>
+            
+                <button onclick="handleRoadmapMapLink('011')"  id="R05BR09" title="R05BR09大安"></button>
+            
+                <button onclick="handleRoadmapMapLink('010')"  id="BL15BR10" title="BL15BR10忠孝復興"></button>
+            
+                <button onclick="handleRoadmapMapLink('009')"  id="G16BR11" title="G16BR11南京復興"></button>
+            
+                <button onclick="handleRoadmapMapLink('008')"  id="BR12" title="BR12中山國中"></button>
+            
+                <button onclick="handleRoadmapMapLink('007')"  id="BR13" title="BR13松山機場"></button>
+            
+                <button onclick="handleRoadmapMapLink('021')"  id="BR14" title="BR14大直"></button>
+            
+                <button onclick="handleRoadmapMapLink('022')"  id="BR15" title="BR15劍南路"></button>
+            
+                <button onclick="handleRoadmapMapLink('023')"  id="BR16" title="BR16西湖"></button>
+            
+                <button onclick="handleRoadmapMapLink('024')"  id="BR17" title="BR17港墘"></button>
+            
+                <button onclick="handleRoadmapMapLink('025')"  id="BR18" title="BR18文德"></button>
+            
+                <button onclick="handleRoadmapMapLink('026')"  id="BR19" title="BR19內湖"></button>
+            
+                <button onclick="handleRoadmapMapLink('027')"  id="BR20" title="BR20大湖公園"></button>
+            
+                <button onclick="handleRoadmapMapLink('028')"  id="BR21" title="BR21葫洲"></button>
+            
+                <button onclick="handleRoadmapMapLink('029')"  id="BR22" title="BR22東湖"></button>
+            
+                <button onclick="handleRoadmapMapLink('030')"  id="BR23" title="BR23南港軟體園區"></button>
+            
+                <button onclick="handleRoadmapMapLink('031')"  id="BL23BR24" title="BL23BR24南港展覽館"></button>
+            
+                <button onclick="handleRoadmapMapLink('104')"  id="R01" title="R01廣慈/奉天宮"></button>
+            
+                <button onclick="handleRoadmapMapLink('099')"  id="R02" title="R02象山"></button>
+            
+                <button onclick="handleRoadmapMapLink('100')"  id="R03" title="R03台北101/世貿"></button>
+            
+                <button onclick="handleRoadmapMapLink('101')"  id="R04" title="R04信義安和"></button>
+            
+                <button onclick="handleRoadmapMapLink('103')"  id="R06" title="R06大安森林公園"></button>
+            
+                <button onclick="handleRoadmapMapLink('134')"  id="R07O06" title="R07O06東門"></button>
+            
+                <button onclick="handleRoadmapMapLink('042')"  id="G10R08" title="G10R08中正紀念堂"></button>
+            
+                <button onclick="handleRoadmapMapLink('050')"  id="R09" title="R09台大醫院"></button>
+            
+                <button onclick="handleRoadmapMapLink('051')"  id="BL12R10" title="BL12R10台北車站"></button>
+            
+                <button onclick="handleRoadmapMapLink('053')"  id="G14R11" title="G14R11中山"></button>
+            
+                <button onclick="handleRoadmapMapLink('054')"  id="R12" title="R12雙連"></button>
+            
+                <button onclick="handleRoadmapMapLink('055')"  id="O11R13" title="O11R13民權西路"></button>
+            
+                <button onclick="handleRoadmapMapLink('056')"  id="R14" title="R14圓山"></button>
+            
+                <button onclick="handleRoadmapMapLink('057')"  id="R15" title="R15劍潭"></button>
+            
+                <button onclick="handleRoadmapMapLink('058')"  id="R16" title="R16士林"></button>
+            
+                <button onclick="handleRoadmapMapLink('059')"  id="R17" title="R17芝山"></button>
+            
+                <button onclick="handleRoadmapMapLink('060')"  id="R18" title="R18明德"></button>
+            
+                <button onclick="handleRoadmapMapLink('061')"  id="R19" title="R19石牌"></button>
+            
+                <button onclick="handleRoadmapMapLink('062')"  id="R20" title="R20唭哩岸"></button>
+            
+                <button onclick="handleRoadmapMapLink('063')"  id="R21" title="R21奇岩"></button>
+            
+                <button onclick="handleRoadmapMapLink('064')"  id="R22" title="R22北投"></button>
+            
+                <button onclick="handleRoadmapMapLink('065')"  id="R22A" title="R22A新北投"></button>
+            
+                <button onclick="handleRoadmapMapLink('066')"  id="R23" title="R23復興崗"></button>
+            
+                <button onclick="handleRoadmapMapLink('067')"  id="R24" title="R24忠義"></button>
+            
+                <button onclick="handleRoadmapMapLink('068')"  id="R25" title="R25關渡"></button>
+            
+                <button onclick="handleRoadmapMapLink('069')"  id="R26" title="R26竹圍"></button>
+            
+                <button onclick="handleRoadmapMapLink('070')"  id="R27" title="R27紅樹林"></button>
+            
+                <button onclick="handleRoadmapMapLink('071')"  id="R28" title="R28淡水"></button>
+            
+                <button onclick="handleRoadmapMapLink('033')"  id="G01" title="G01新店"></button>
+            
+                <button onclick="handleRoadmapMapLink('034')"  id="G02" title="G02新店區公所"></button>
+            
+                <button onclick="handleRoadmapMapLink('035')"  id="G03" title="G03七張"></button>
+            
+                <button onclick="handleRoadmapMapLink('032')"  id="G03A" title="G03A小碧潭"></button>
+            
+                <button onclick="handleRoadmapMapLink('036')"  id="G04Y07" title="G04Y07大坪林"></button>
+            
+                <button onclick="handleRoadmapMapLink('037')"  id="G05" title="G05景美"></button>
+            
+                <button onclick="handleRoadmapMapLink('038')"  id="G06" title="G06萬隆"></button>
+            
+                <button onclick="handleRoadmapMapLink('039')"  id="G07" title="G07公館"></button>
+            
+                <button onclick="handleRoadmapMapLink('040')"  id="G08" title="G08台電大樓"></button>
+            
+                <button onclick="handleRoadmapMapLink('041')"  id="G09O05" title="G09O05古亭"></button>
+            
+                <button onclick="handleRoadmapMapLink('043')"  id="G11" title="G11小南門"></button>
+            
+                <button onclick="handleRoadmapMapLink('086')"  id="BL11G12" title="BL11G12西門"></button>
+            
+                <button onclick="handleRoadmapMapLink('105')"  id="G13" title="G13北門"></button>
+            
+                <button onclick="handleRoadmapMapLink('132')"  id="G15O08" title="G15O08松江南京"></button>
+            
+                <button onclick="handleRoadmapMapLink('109')"  id="G17" title="G17台北小巨蛋"></button>
+            
+                <button onclick="handleRoadmapMapLink('110')"  id="G18" title="G18南京三民"></button>
+            
+                <button onclick="handleRoadmapMapLink('111')"  id="G19" title="G19松山"></button>
+            
+                <button onclick="handleRoadmapMapLink('048')"  id="O01" title="O01南勢角"></button>
+            
+                <button onclick="handleRoadmapMapLink('047')"  id="Y11O02" title="Y11O02景安"></button>
+            
+                <button onclick="handleRoadmapMapLink('046')"  id="O03" title="O03永安市場"></button>
+            
+                <button onclick="handleRoadmapMapLink('045')"  id="O04" title="O04頂溪"></button>
+            
+                <button onclick="handleRoadmapMapLink('089')"  id="BL14O07" title="BL14O07忠孝新生"></button>
+            
+                <button onclick="handleRoadmapMapLink('131')"  id="O09" title="O09行天宮"></button>
+            
+                <button onclick="handleRoadmapMapLink('130')"  id="O10" title="O10中山國小"></button>
+            
+                <button onclick="handleRoadmapMapLink('128')"  id="O12" title="O12大橋頭"></button>
+            
+                <button onclick="handleRoadmapMapLink('127')"  id="O13" title="O13台北橋"></button>
+            
+                <button onclick="handleRoadmapMapLink('126')"  id="O14" title="O14菜寮"></button>
+            
+                <button onclick="handleRoadmapMapLink('125')"  id="O15" title="O15三重"></button>
+            
+                <button onclick="handleRoadmapMapLink('124')"  id="O16" title="O16先嗇宮"></button>
+            
+                <button onclick="handleRoadmapMapLink('123')"  id="Y18O17" title="Y18O17頭前庄"></button>
+            
+                <button onclick="handleRoadmapMapLink('122')"  id="O18" title="O18新莊"></button>
+            
+                <button onclick="handleRoadmapMapLink('121')"  id="O19" title="O19輔大"></button>
+            
+                <button onclick="handleRoadmapMapLink('180')"  id="O20" title="O20丹鳳"></button>
+            
+                <button onclick="handleRoadmapMapLink('179')"  id="O21" title="O21迴龍"></button>
+            
+                <button onclick="handleRoadmapMapLink('178')"  id="O50" title="O50三重國小"></button>
+            
+                <button onclick="handleRoadmapMapLink('177')"  id="O51" title="O51三和國中"></button>
+            
+                <button onclick="handleRoadmapMapLink('176')"  id="O52" title="O52徐匯中學"></button>
+            
+                <button onclick="handleRoadmapMapLink('175')"  id="O53" title="O53三民高中"></button>
+            
+                <button onclick="handleRoadmapMapLink('174')"  id="O54" title="O54蘆洲"></button>
+            
+                <button onclick="handleRoadmapMapLink('076')"  id="BL01" title="BL01頂埔"></button>
+            
+                <button onclick="handleRoadmapMapLink('077')"  id="BL02" title="BL02永寧"></button>
+            
+                <button onclick="handleRoadmapMapLink('078')"  id="BL03" title="BL03土城"></button>
+            
+                <button onclick="handleRoadmapMapLink('079')"  id="BL04" title="BL04海山"></button>
+            
+                <button onclick="handleRoadmapMapLink('080')"  id="BL05" title="BL05亞東醫院"></button>
+            
+                <button onclick="handleRoadmapMapLink('081')"  id="BL06" title="BL06府中"></button>
+            
+                <button onclick="handleRoadmapMapLink('082')"  id="BL07" title="BL07板橋"></button>
+            
+                <button onclick="handleRoadmapMapLink('083')"  id="BL08" title="BL08新埔"></button>
+            
+                <button onclick="handleRoadmapMapLink('084')"  id="BL09" title="BL09江子翠"></button>
+            
+                <button onclick="handleRoadmapMapLink('085')"  id="BL10" title="BL10龍山寺"></button>
+            
+                <button onclick="handleRoadmapMapLink('088')"  id="BL13" title="BL13善導寺"></button>
+            
+                <button onclick="handleRoadmapMapLink('091')"  id="BL16" title="BL16忠孝敦化"></button>
+            
+                <button onclick="handleRoadmapMapLink('092')"  id="BL17" title="BL17國父紀念館"></button>
+            
+                <button onclick="handleRoadmapMapLink('093')"  id="BL18" title="BL18市政府"></button>
+            
+                <button onclick="handleRoadmapMapLink('094')"  id="BL19" title="BL19永春"></button>
+            
+                <button onclick="handleRoadmapMapLink('095')"  id="BL20" title="BL20後山埤"></button>
+            
+                <button onclick="handleRoadmapMapLink('096')"  id="BL21" title="BL21昆陽"></button>
+            
+                <button onclick="handleRoadmapMapLink('097')"  id="BL22" title="BL22南港"></button>
+            
+                <button onclick="handleRoadmapMapLink('201')"  id="Y08" title="Y08十四張"></button>
+            
+                <button onclick="handleRoadmapMapLink('202')"  id="Y09" title="Y09秀朗橋"></button>
+            
+                <button onclick="handleRoadmapMapLink('203')"  id="Y10" title="Y10景平"></button>
+            
+                <button onclick="handleRoadmapMapLink('205')"  id="Y12" title="Y12中和"></button>
+            
+                <button onclick="handleRoadmapMapLink('206')"  id="Y13" title="Y13橋和"></button>
+            
+                <button onclick="handleRoadmapMapLink('207')"  id="Y14" title="Y14中原"></button>
+            
+                <button onclick="handleRoadmapMapLink('208')"  id="Y15" title="Y15板新"></button>
+            
+                <button onclick="handleRoadmapMapLink('209')"  id="Y16" title="Y16板橋"></button>
+            
+                <button onclick="handleRoadmapMapLink('210')"  id="Y17" title="Y17新埔民生"></button>
+            
+                <button onclick="handleRoadmapMapLink('212')"  id="Y19" title="Y19幸福"></button>
+            
+                <button onclick="handleRoadmapMapLink('213')"  id="Y20" title="Y20新北產業園區"></button>
+            
+        <a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "淡海輕軌(新北捷運公司), 另開新視窗" title = "淡海輕軌(新北捷運公司), 另開新視窗" id = "DLRT" ></a><a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "安坑輕軌(新北捷運公司), 另開新視窗" title = "安坑輕軌(新北捷運公司), 另開新視窗" id = "ALRT1" ></a><a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "安坑輕軌(新北捷運公司), 另開新視窗" title = "安坑輕軌(新北捷運公司), 另開新視窗" id = "ALRT2" ></a><a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "安坑輕軌(新北捷運公司), 另開新視窗" title = "安坑輕軌(新北捷運公司), 另開新視窗" id = "ALRT3" ></a><a href = "https://www.tymetro.com.tw/" target = "_blank" alt = "桃園捷運公司, 另開新視窗" title = "桃園捷運公司, 另開新視窗" id = "tymetroA1" ></a><a href = "https://www.tymetro.com.tw/" target = "_blank" alt = "桃園捷運公司, 另開新視窗" title = "桃園捷運公司, 另開新視窗" id = "tymetroA2" ></a><a href = "https://www.tymetro.com.tw/" target = "_blank" alt = "桃園捷運公司, 另開新視窗" title = "桃園捷運公司, 另開新視窗" id = "tymetroOther" ></a><a href = "https://www.tcap.taipei/" target = "_blank" alt = "兒童新樂園, 另開新視窗" title = "兒童新樂園, 另開新視窗" id = "tcap" ></a><a href = "https://www.gondola.taipei/" target = "_blank" alt = "貓空纜車, 另開新視窗" title = "貓空纜車, 另開新視窗" id = "gondola" ></a><a href = "https://www.tymetro.com.tw/" target = "_blank" alt = "桃園捷運公司, 另開新視窗" title = "桃園捷運公司, 另開新視窗" id = "tymetroOther2" ></a><a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "三鶯線(新北捷運公司), 另開新視窗" title = "三鶯線(新北捷運公司), 另開新視窗" id = "sanying1" ></a><a href = "https://www.ntmetro.com.tw/" target = "_blank" alt = "三鶯線(新北捷運公司), 另開新視窗" title = "三鶯線(新北捷運公司), 另開新視窗" id = "sanying2" ></a>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function handleRoadmapMapLink(SID) {
+        __doPostBack('station_click', SID);
+    }
+</script>
+                    <a class="routemap__download-link" target="_blank"
+                        href="https://web.metro.taipei/img/all/metrotaipeimap.jpg?t=20260830">
+                        <img src="./images/routemapDL_btn.png" alt="下載按鈕" /></a>
+                </div>
+            </section>
+            <script src="/pages2026/assets/autocomplete/autocomplete.js"></script>
+            <script src="/pages2026/js/stations-data.js"></script>
+            <script src="/pages2026/js/script.js?t=20261016143900"></script>
+            <script src="/pages2026/js/webroutemap.js?t=20261016143900"></script>
+        </form>
+    </body>
+
+    </html>

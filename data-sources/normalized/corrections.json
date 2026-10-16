@@ -1,0 +1,44 @@
+[
+  {
+    "field": "StationName.en",
+    "raw": "Chiang Kai-Shek Memorial Hall",
+    "normalized": "C.K.S. Memorial Hall",
+    "reason": "Official bilingual menu spelling for R08/G10"
+  },
+  {
+    "field": "StationName.en",
+    "raw": "Minzuan W. Rd.",
+    "normalized": "Minquan W. Rd.",
+    "reason": "Official bilingual menu spelling for R13/O11"
+  },
+  {
+    "field": "StationID",
+    "raw": "G01A",
+    "normalized": "G03A",
+    "reason": "Both route CSV and official station menu identify Xiaobitan as G03A"
+  },
+  {
+    "field": "StationName.en",
+    "raw": "Songliang Nanjing",
+    "normalized": "Songjiang Nanjing",
+    "reason": "Official bilingual menu spelling for G15/O08"
+  },
+  {
+    "field": "StationName.en",
+    "raw": "St.lgnatius High School",
+    "normalized": "St. Ignatius High School",
+    "reason": "Official bilingual menu spelling for O52"
+  },
+  {
+    "field": "StationName.en",
+    "raw": "Xhongxiao Dunhua",
+    "normalized": "Zhongxiao Dunhua",
+    "reason": "Official bilingual menu spelling for BL16"
+  },
+  {
+    "field": "StationName.en",
+    "raw": "Sun Yat-Sen Memorial Hall",
+    "normalized": "S.Y.S. Memorial Hall",
+    "reason": "Official bilingual menu spelling for BL17"
+  }
+]

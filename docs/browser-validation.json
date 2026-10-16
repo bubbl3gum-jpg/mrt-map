@@ -1,0 +1,13 @@
+{
+  "desktopOwnerPointerSelections": 120,
+  "desktopBorrowerPointerChoices": 120,
+  "mobileOwnerPointerSelections": 120,
+  "legacyIdsRetained": 26,
+  "refreshPersistence": true,
+  "unavailableBorrowerBlocked": true,
+  "simulatedConfirmation": true,
+  "searchFocus": true,
+  "panReset": true,
+  "mobileOverflow": false,
+  "browserErrors": []
+}

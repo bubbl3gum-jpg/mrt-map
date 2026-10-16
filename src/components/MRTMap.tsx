@@ -1,7 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Plus, Minus, LocateFixed } from "lucide-react";
 import type { Network } from "../data/types";
-import { lines } from "../data/lines";
+import { placeMapLabels } from "../utils/map-labels";
+import { lines as fallbackLines } from "../data/lines";
+const clamp = (z: number) => Math.min(8, Math.max(0.65, z));
 export function MRTMap({
   network: n,
   available,
@@ -9,6 +11,9 @@ export function MRTMap({
   borrower,
   onSelect,
   focus,
+  visibleSystemIds,
+  focusRevision = 0,
+  onResetView,
 }: {
   network: Network;
   available: string[];
@@ -16,37 +21,108 @@ export function MRTMap({
   borrower: boolean;
   onSelect: (id: string) => void;
   focus: string | null;
+  visibleSystemIds?: string[];
+  focusRevision?: number;
+  onResetView?: () => void;
 }) {
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [hover, setHover] = useState<string | null>(null);
+  const [size, setSize] = useState({ width: 800, height: 620 });
+  const container = useRef<HTMLDivElement>(null),
+    svg = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; px: number; py: number } | null>(
     null,
   );
+  const lines = n.lines ?? fallbackLines;
+  const visible = n.stations.filter(
+    (s) =>
+      !visibleSystemIds ||
+      !s.systemIds ||
+      s.systemIds.some((id) => visibleSystemIds.includes(id)),
+  );
+  const ids = new Set(visible.map((s) => s.id));
   const ps = Object.values(n.layout);
-  const minX = Math.min(...ps.map((p) => p.x)) - 110,
-    minY = Math.min(...ps.map((p) => p.y)) - 65;
-  const width = Math.max(...ps.map((p) => p.x)) - minX + 150,
-    height = Math.max(...ps.map((p) => p.y)) - minY + 75;
+  const minX = Math.min(...ps.map((p) => p.x)) - 180,
+    minY = Math.min(...ps.map((p) => p.y)) - 180;
+  const width = Math.max(...ps.map((p) => p.x)) - minX + 240,
+    height = Math.max(...ps.map((p) => p.y)) - minY + 180,
+    cx = minX + width / 2,
+    cy = minY + height / 2;
+  const scale = Math.min(size.width / width, size.height / height) * zoom;
+  const terminalIds = useMemo(
+    () => new Set(n.routes.flatMap((r) => [r.stations[0], r.stations.at(-1)!])),
+    [n],
+  );
+  // Render each undirected track edge once; reverse directions/short workings stay in data.
+  const edges = useMemo(() => {
+    const seen = new Set<string>();
+    return n.routes.flatMap((r) =>
+      r.stations.slice(1).flatMap((id, i) => {
+        const from = r.stations[i];
+        const key = r.line + ":" + [from, id].sort().join(":");
+        if (seen.has(key)) return [];
+        seen.add(key);
+        return [{ key, line: r.line, from, to: id }];
+      }),
+    );
+  }, [n]);
+  useEffect(() => {
+    if (!container.current) return;
+    const update = () => {
+      const r = container.current!.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0)
+        setSize({ width: r.width, height: r.height });
+    };
+    update();
+    if (typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(update);
+    observer.observe(container.current);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    if (focus && n.layout[focus]) {
+      const p = n.layout[focus];
+      setZoom(3.2);
+      setPan({ x: (cx - p.x) * 3.2, y: (cy - p.y) * 3.2 });
+    }
+  }, [focus, focusRevision, n, cx, cy]);
+  useEffect(() => {
+    const el = container.current;
+    if (!el) return;
+    const wheel = (e: WheelEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        setZoom((z) => clamp(z * Math.exp(-e.deltaY * 0.003)));
+      }
+    };
+    el.addEventListener("wheel", wheel, { passive: false });
+    return () => el.removeEventListener("wheel", wheel);
+  }, []);
+  function point(clientX: number, clientY: number) {
+    const matrix = svg.current?.getScreenCTM();
+    if (!matrix) return { x: clientX, y: clientY };
+    return new DOMPoint(clientX, clientY).matrixTransform(matrix.inverse());
+  }
   return (
-    <div className="map-stage">
+    <div className="map-stage full-network" ref={container}>
       <svg
+        ref={svg}
         aria-label="Interactive MRT station network"
         viewBox={`${minX} ${minY} ${width} ${height}`}
         onPointerDown={(e) => {
-          if (
-            e.target === e.currentTarget ||
-            (e.target as Element).classList.contains("pan-surface")
-          ) {
-            drag.current = { x: e.clientX, y: e.clientY, px: pan.x, py: pan.y };
+          if (!(e.target as Element).closest('[role="button"]')) {
+            const p = point(e.clientX, e.clientY);
+            drag.current = { ...p, px: pan.x, py: pan.y };
             e.currentTarget.setPointerCapture(e.pointerId);
           }
         }}
         onPointerMove={(e) => {
           if (drag.current) {
-            const ratio = width / e.currentTarget.getBoundingClientRect().width;
+            const p = point(e.clientX, e.clientY);
             setPan({
-              x: drag.current.px + (e.clientX - drag.current.x) * ratio,
-              y: drag.current.py + (e.clientY - drag.current.y) * ratio,
+              x: drag.current.px + p.x - drag.current.x,
+              y: drag.current.py + p.y - drag.current.y,
             });
           }
         }}
@@ -62,50 +138,46 @@ export function MRTMap({
           fill="transparent"
         />
         <g
-          transform={`translate(${pan.x} ${pan.y}) translate(${minX + width / 2} ${minY + height / 2}) scale(${zoom}) translate(${-minX - width / 2} ${-minY - height / 2})`}
+          data-testid="map-transform"
+          transform={`translate(${pan.x} ${pan.y}) translate(${cx} ${cy}) scale(${zoom}) translate(${-cx} ${-cy})`}
         >
-          <path
-            d="M 245 45 C 270 200 140 230 245 355 S 250 560 285 690"
-            fill="none"
-            stroke="#e2edf2"
-            strokeWidth="28"
-          />
-          <text
-            x="185"
-            y="345"
-            fill="#a1b9c8"
-            fontSize="11"
-            transform="rotate(-74 185 345)"
-          >
-            TAMSUI RIVER 淡水河
-          </text>
-          {n.routes.map((r) => (
-            <polyline
-              key={r.id}
-              points={r.stations
-                .map((id) => `${n.layout[id].x},${n.layout[id].y}`)
-                .join(" ")}
-              fill="none"
-              stroke={lines.find((l) => l.id === r.line)?.color}
-              strokeWidth="7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              opacity={borrower ? 0.45 : 1}
-            />
-          ))}
-          {n.transfers.map((t) => (
-            <line
-              key={t.from + t.to}
-              x1={n.layout[t.from].x}
-              y1={n.layout[t.from].y}
-              x2={n.layout[t.to].x}
-              y2={n.layout[t.to].y}
-              stroke="#8f9ba7"
-              strokeWidth="2"
-              strokeDasharray="5 4"
-            />
-          ))}
-          {n.stations.map((s) => {
+          {edges
+            .filter((e) => ids.has(e.from) && ids.has(e.to))
+            .map((e) => (
+              <line
+                key={e.key}
+                data-line={e.line}
+                x1={n.layout[e.from].x}
+                y1={n.layout[e.from].y}
+                x2={n.layout[e.to].x}
+                y2={n.layout[e.to].y}
+                stroke={lines.find((l) => l.id === e.line)?.color ?? "#7f8c8d"}
+                strokeWidth="3.5"
+                vectorEffect="non-scaling-stroke"
+                strokeLinecap="round"
+                opacity={borrower ? 0.45 : 1}
+              />
+            ))}
+          {n.transfers
+            .filter((t) => ids.has(t.from) && ids.has(t.to))
+            .map((t) => (
+              <line
+                key={t.from + t.to}
+                x1={n.layout[t.from].x}
+                y1={n.layout[t.from].y}
+                x2={n.layout[t.to].x}
+                y2={n.layout[t.to].y}
+                stroke="#7c8d85"
+                strokeWidth="2"
+                vectorEffect="non-scaling-stroke"
+                strokeDasharray="3 3"
+              >
+                <title>
+                  Out-of-station walking transfer — separate handoff locations
+                </title>
+              </line>
+            ))}
+          {visible.map((s) => {
             const p = n.layout[s.id],
               selected = available.includes(s.id),
               disabled = borrower && !selected,
@@ -113,6 +185,7 @@ export function MRTMap({
             return (
               <g
                 key={s.id}
+                data-station-id={s.id}
                 role="button"
                 tabIndex={disabled ? -1 : 0}
                 aria-label={`${s.nameEn} ${s.nameZh} ${Object.values(s.codes).join(" ")}${selected ? " available" : ""}`}
@@ -125,66 +198,132 @@ export function MRTMap({
                     onSelect(s.id);
                   }
                 }}
+                onPointerEnter={() => setHover(s.id)}
+                onPointerLeave={() => setHover(null)}
+                onFocus={() => setHover(s.id)}
+                onBlur={() => setHover(null)}
                 className={`station ${disabled ? "disabled" : ""}`}
               >
-                <rect
-                  x={p.x - 12}
-                  y={p.y - 38}
-                  width="125"
-                  height="52"
-                  fill="transparent"
-                />
+                <title>
+                  {s.nameZh} · {s.nameEn} · {Object.values(s.codes).join(" / ")}
+                  {disabled ? " — unavailable" : ""}
+                </title>
                 {(active || focus === s.id) && (
                   <circle
                     cx={p.x}
                     cy={p.y}
-                    r="17"
+                    r={9 / scale}
                     fill={active ? "#d8eee9" : "#e2e8fe"}
                     stroke={active ? "#237c68" : "#7379bd"}
                     strokeWidth="1"
+                    vectorEffect="non-scaling-stroke"
                   />
                 )}
                 <circle
+                  className="station-hit"
                   cx={p.x}
                   cy={p.y}
-                  r={Object.keys(s.codes).length > 1 ? 8 : 5.5}
+                  r={6.5 / scale}
+                  fill="transparent"
+                />
+                <circle
+                  className="station-dot"
+                  cx={p.x}
+                  cy={p.y}
+                  r={(Object.keys(s.codes).length > 1 ? 4.8 : 3.3) / scale}
                   fill={active ? "#23816b" : "white"}
-                  stroke={disabled ? "#b8c0c9" : "#344752"}
-                  strokeWidth="2"
+                  stroke={disabled ? "#9ba7a1" : "#344752"}
+                  strokeWidth={Object.keys(s.codes).length > 1 ? "1.7" : "1.2"}
+                  vectorEffect="non-scaling-stroke"
+                  pointerEvents="none"
                 />
                 {active && (
                   <path
-                    d={`M${p.x - 3} ${p.y} l2 2 l4 -4`}
+                    d={`M${p.x - 2.5 / scale} ${p.y} l${2 / scale} ${2 / scale} l${3.5 / scale} ${-4 / scale}`}
                     fill="none"
                     stroke="white"
-                    strokeWidth="1.5"
+                    strokeWidth="1.2"
+                    vectorEffect="non-scaling-stroke"
+                    pointerEvents="none"
                   />
                 )}
-                <text x={p.x + 12} y={p.y - 29} className="station-zh">
-                  {s.nameZh}
-                </text>
-                <text x={p.x + 12} y={p.y - 16} className="station-en">
-                  {s.nameEn}
-                </text>
-                <text x={p.x + 12} y={p.y - 5} className="station-code">
-                  {Object.values(s.codes).join(" · ")}
-                </text>
               </g>
             );
           })}
+          {/* Labels are a separate, non-intercepting layer, so no text blocks another station. */}
+          {placeMapLabels(
+            visible,
+            n.layout,
+            scale,
+            zoom,
+            terminalIds,
+            new Set(
+              borrower
+                ? choice
+                  ? [choice]
+                  : []
+                : available.length <= 5
+                  ? available
+                  : [],
+            ),
+            hover ?? focus,
+            {
+              left: cx * scale - size.width / 2 - pan.x * (scale / zoom) + 8,
+              right: cx * scale + size.width / 2 - pan.x * (scale / zoom) - 8,
+              top: cy * scale - size.height / 2 - pan.y * (scale / zoom) + 8,
+              bottom: cy * scale + size.height / 2 - pan.y * (scale / zoom) - 8,
+            },
+          ).map(({ station: s, x, y, anchor, detail }) => (
+            <g
+              className="map-label"
+              pointerEvents="none"
+              key={s.id}
+              textAnchor={anchor}
+              style={{ fontSize: 11 / scale, strokeWidth: 3 / scale }}
+            >
+              <text x={x} y={y}>
+                {s.nameZh}
+              </text>
+              {detail && (
+                <>
+                  <text
+                    className="map-label-en"
+                    x={x}
+                    y={y + 13 / scale}
+                    style={{ fontSize: 9 / scale }}
+                  >
+                    {s.nameEn}
+                  </text>
+                  <text
+                    className="map-label-code"
+                    x={x}
+                    y={y + 24 / scale}
+                    style={{ fontSize: 8 / scale }}
+                  >
+                    {Object.values(s.codes).join(" · ")}
+                  </text>
+                </>
+              )}
+            </g>
+          ))}
         </g>
       </svg>
+      <div className="map-guidance">
+        {zoom < 3
+          ? "Full network overview · Search or zoom in for station labels"
+          : "Station detail · Drag the background to explore"}
+      </div>
       <div className="map-tools">
         <button
           aria-label="Zoom in"
-          onClick={() => setZoom((z) => Math.min(3, z + 0.2))}
+          onClick={() => setZoom((z) => clamp(z * 1.3))}
         >
           <Plus size={17} />
         </button>
         <span>{Math.round(zoom * 100)}%</span>
         <button
           aria-label="Zoom out"
-          onClick={() => setZoom((z) => Math.max(0.5, z - 0.2))}
+          onClick={() => setZoom((z) => clamp(z / 1.3))}
         >
           <Minus size={17} />
         </button>
@@ -192,6 +331,8 @@ export function MRTMap({
         <button
           aria-label="Reset map view"
           onClick={() => {
+            setHover(null);
+            onResetView?.();
             setZoom(1);
             setPan({ x: 0, y: 0 });
           }}
@@ -200,8 +341,8 @@ export function MRTMap({
         </button>
       </div>
       <div className="map-caption">
-        <span className="dot" /> Schematic preview{" "}
-        <span>Drag to pan · Use + / − to zoom</span>
+        <span className="dot" /> Original schematic · Layout under review{" "}
+        <span>Drag to pan · Ctrl/⌘ + scroll to zoom</span>
       </div>
     </div>
   );

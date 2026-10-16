@@ -972,3 +972,61 @@ aside,
     font-size: 8px;
   }
 }
+.full-network {
+  height: 680px;
+}
+.map-label {
+  fill: #344c40;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 8px;
+  stroke-linejoin: round;
+}
+.map-label-en {
+  fill: #62766a;
+  font-weight: 400;
+}
+.map-label-code {
+  fill: #819486;
+  font-weight: 400;
+}
+.map-guidance {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  padding: 7px 10px;
+  border: 1px solid #e6ece6;
+  border-radius: 5px;
+  background: #ffffffed;
+  font-size: 9px;
+  color: #7a9180;
+  pointer-events: none;
+}
+.system-filters {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  color: #678373;
+}
+.system-filters label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .full-network {
+    height: 560px;
+  }
+  .map-guidance {
+    font-size: 8px;
+    left: 9px;
+  }
+  .map-caption {
+    font-size: 7px;
+  }
+  .map-tools {
+    bottom: 28px;
+  }
+}

@@ -1,10 +1,9 @@
-import type { LineId } from "./types";
-export const lines: { id: LineId; name: string; zh: string; color: string }[] =
-  [
-    { id: "BR", name: "Wenhu", zh: "文湖線", color: "#b08348" },
-    { id: "R", name: "Tamsui–Xinyi", zh: "淡水信義線", color: "#e14c55" },
-    { id: "G", name: "Songshan–Xindian", zh: "松山新店線", color: "#299c79" },
-    { id: "O", name: "Zhonghe–Xinlu", zh: "中和新蘆線", color: "#f3a533" },
-    { id: "BL", name: "Bannan", zh: "板南線", color: "#438cce" },
-    { id: "Y", name: "Circular", zh: "環狀線", color: "#d3b833" },
-  ];
+import type { LineDefinition } from "./types";
+export const lines: LineDefinition[] = [
+  { id: "BR", name: "Wenhu", zh: "文湖線", color: "#c48c32" },
+  { id: "R", name: "Tamsui–Xinyi", zh: "淡水信義線", color: "#e3002c" },
+  { id: "G", name: "Songshan–Xindian", zh: "松山新店線", color: "#00865a" },
+  { id: "O", name: "Zhonghe–Xinlu", zh: "中和新蘆線", color: "#f8b61d" },
+  { id: "BL", name: "Bannan", zh: "板南線", color: "#0070bd" },
+  { id: "Y", name: "Circular", zh: "環狀線", color: "#f4d30e" },
+];

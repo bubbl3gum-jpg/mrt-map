@@ -1,0 +1,65 @@
+{
+  "asOf": "2026-10-16",
+  "physicalLocations": 120,
+  "uniqueCodes": 136,
+  "displayedStations": 120,
+  "operationalPhysicalLocations": 120,
+  "perLine": [
+    {
+      "line": "BR",
+      "operator": "TRTC",
+      "codes": 24,
+      "routes": 2
+    },
+    {
+      "line": "R",
+      "operator": "TRTC",
+      "codes": 29,
+      "routes": 6
+    },
+    {
+      "line": "G",
+      "operator": "TRTC",
+      "codes": 20,
+      "routes": 6
+    },
+    {
+      "line": "O",
+      "operator": "TRTC",
+      "codes": 26,
+      "routes": 4
+    },
+    {
+      "line": "BL",
+      "operator": "TRTC",
+      "codes": 23,
+      "routes": 4
+    },
+    {
+      "line": "Y",
+      "operator": "NTMC",
+      "codes": 14,
+      "routes": 1
+    }
+  ],
+  "perOperator": [
+    {
+      "operator": "TRTC",
+      "physicalLocations": 109,
+      "lineCodes": 122
+    },
+    {
+      "operator": "NTMC",
+      "physicalLocations": 14,
+      "lineCodes": 14
+    }
+  ],
+  "requestedOperatorReportedTarget": {
+    "TRTC": 118,
+    "NTMC": 14,
+    "total": 132,
+    "verifiedAsSameCountingBasis": false
+  },
+  "walkingTransfers": 2,
+  "sourceCorrections": 7
+}

@@ -1,0 +1,15 @@
+{
+  "asOf": "2026-10-16",
+  "rawSnapshotHashes": "checked",
+  "reference": "retained CSV route sequences, bilingual SID menu, NTMC ordered station table and official diagram walking links",
+  "physicalLocations": 120,
+  "codes": 136,
+  "routes": 23,
+  "railGraphConnected": true,
+  "errors": [],
+  "limitations": [
+    "Y route is an ordered operator station-table chain, not a TDX RouteID export",
+    "Schematic label placement remains under review",
+    "132 operator target uses a different counting basis; see inventory report"
+  ]
+}
