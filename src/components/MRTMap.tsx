@@ -3,7 +3,8 @@ import { Plus, Minus, LocateFixed } from "lucide-react";
 import type { Network } from "../data/types";
 import { placeMapLabels } from "../utils/map-labels";
 import { lines as fallbackLines } from "../data/lines";
-const clamp = (z: number) => Math.min(8, Math.max(0.65, z));
+import { useMapCamera } from "../hooks/useMapCamera";
+import { MIN_ZOOM, MAX_ZOOM } from "../utils/map-camera";
 export function MRTMap({
   network: n,
   available,
@@ -25,15 +26,10 @@ export function MRTMap({
   focusRevision?: number;
   onResetView?: () => void;
 }) {
-  const [zoom, setZoom] = useState(1);
-  const [pan, setPan] = useState({ x: 0, y: 0 });
   const [hover, setHover] = useState<string | null>(null);
   const [size, setSize] = useState({ width: 800, height: 620 });
   const container = useRef<HTMLDivElement>(null),
     svg = useRef<SVGSVGElement>(null);
-  const drag = useRef<{ x: number; y: number; px: number; py: number } | null>(
-    null,
-  );
   const lines = n.lines ?? fallbackLines;
   const visible = n.stations.filter(
     (s) =>
@@ -49,6 +45,13 @@ export function MRTMap({
     height = Math.max(...ps.map((p) => p.y)) - minY + 180,
     cx = minX + width / 2,
     cy = minY + height / 2;
+  const {
+    camera: { zoom, pan },
+    zoomBy,
+    focusAt,
+    reset,
+    handlers,
+  } = useMapCamera(svg, { x: cx, y: cy });
   const scale = Math.min(size.width / width, size.height / height) * zoom;
   const terminalIds = useMemo(
     () => new Set(n.routes.flatMap((r) => [r.stations[0], r.stations.at(-1)!])),
@@ -83,51 +86,16 @@ export function MRTMap({
   useEffect(() => {
     if (focus && n.layout[focus]) {
       const p = n.layout[focus];
-      setZoom(3.2);
-      setPan({ x: (cx - p.x) * 3.2, y: (cy - p.y) * 3.2 });
+      focusAt(p);
     }
   }, [focus, focusRevision, n, cx, cy]);
-  useEffect(() => {
-    const el = container.current;
-    if (!el) return;
-    const wheel = (e: WheelEvent) => {
-      if (e.ctrlKey || e.metaKey) {
-        e.preventDefault();
-        setZoom((z) => clamp(z * Math.exp(-e.deltaY * 0.003)));
-      }
-    };
-    el.addEventListener("wheel", wheel, { passive: false });
-    return () => el.removeEventListener("wheel", wheel);
-  }, []);
-  function point(clientX: number, clientY: number) {
-    const matrix = svg.current?.getScreenCTM();
-    if (!matrix) return { x: clientX, y: clientY };
-    return new DOMPoint(clientX, clientY).matrixTransform(matrix.inverse());
-  }
   return (
     <div className="map-stage full-network" ref={container}>
       <svg
         ref={svg}
         aria-label="Interactive MRT station network"
         viewBox={`${minX} ${minY} ${width} ${height}`}
-        onPointerDown={(e) => {
-          if (!(e.target as Element).closest('[role="button"]')) {
-            const p = point(e.clientX, e.clientY);
-            drag.current = { ...p, px: pan.x, py: pan.y };
-            e.currentTarget.setPointerCapture(e.pointerId);
-          }
-        }}
-        onPointerMove={(e) => {
-          if (drag.current) {
-            const p = point(e.clientX, e.clientY);
-            setPan({
-              x: drag.current.px + p.x - drag.current.x,
-              y: drag.current.py + p.y - drag.current.y,
-            });
-          }
-        }}
-        onPointerUp={() => (drag.current = null)}
-        onPointerCancel={() => (drag.current = null)}
+        {...handlers}
       >
         <rect
           className="pan-surface"
@@ -316,14 +284,16 @@ export function MRTMap({
       <div className="map-tools">
         <button
           aria-label="Zoom in"
-          onClick={() => setZoom((z) => clamp(z * 1.3))}
+          disabled={zoom >= MAX_ZOOM - 0.0001}
+          onClick={() => zoomBy(1.3)}
         >
           <Plus size={17} />
         </button>
         <span>{Math.round(zoom * 100)}%</span>
         <button
           aria-label="Zoom out"
-          onClick={() => setZoom((z) => clamp(z / 1.3))}
+          disabled={zoom <= MIN_ZOOM + 0.0001}
+          onClick={() => zoomBy(1 / 1.3)}
         >
           <Minus size={17} />
         </button>
@@ -333,8 +303,7 @@ export function MRTMap({
           onClick={() => {
             setHover(null);
             onResetView?.();
-            setZoom(1);
-            setPan({ x: 0, y: 0 });
+            reset();
           }}
         >
           <LocateFixed size={18} />
@@ -342,7 +311,7 @@ export function MRTMap({
       </div>
       <div className="map-caption">
         <span className="dot" /> Original schematic · Layout under review{" "}
-        <span>Drag to pan · Ctrl/⌘ + scroll to zoom</span>
+        <span>Drag to pan · Scroll or pinch to zoom</span>
       </div>
     </div>
   );

@@ -298,7 +298,7 @@ h2 {
   overflow: hidden;
   border-block: 1px solid #f0f3f2;
 }
-.map-stage svg {
+.map-stage > svg {
   width: 100%;
   height: 100%;
   touch-action: none;
@@ -1029,4 +1029,28 @@ aside,
   .map-tools {
     bottom: 28px;
   }
+}
+/* Camera controls stay outside the transformed SVG content. */
+.map-tools {
+  z-index: 2;
+  gap: 3px;
+}
+.map-tools button {
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  touch-action: manipulation;
+}
+.map-tools button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.map-tools span {
+  font-variant-numeric: tabular-nums;
+}
+.map-guidance,
+.map-caption {
+  pointer-events: none;
 }

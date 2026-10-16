@@ -1,0 +1,25 @@
+{
+  "runAt": "2026-10-16T07:44:03.371Z",
+  "base": "http://127.0.0.1:4173",
+  "checks": [
+    "Plus changes rendered scale and station separation",
+    "Minus decreases rendered scale",
+    "Ordinary mouse wheel anchors rendered point",
+    "Ctrl-wheel trackpad-style input anchors rendered point",
+    "Station-origin drag pans finite geometry without selection",
+    "Button zoom preserves panned viewport center",
+    "Search after navigation centers station; zoomed pan and station click work",
+    "Borrower mode preserves camera and approved selection/confirmation",
+    "Zoom controls disable at both limits; Reset fits all 120 locations",
+    "Outside-map wheel scrolls the page; typing does not zoom",
+    "Synthetic Safari gesture compatibility changes rendered scale",
+    "390px real CDP two-touch pinch zooms around gesture center without selection",
+    "390px one-finger touch drag pans finite rendered geometry",
+    "390px touch controls have 44px targets, work and fit network",
+    "390px native touch taps select an Owner station and approved Borrower choice"
+  ],
+  "browserErrors": [],
+  "limitations": [
+    "Native macOS trackpad hardware and Safari were not tested; Ctrl-wheel, CDP touch and synthetic gesture events are distinct automated coverage."
+  ]
+}
