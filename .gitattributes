@@ -1,0 +1,2 @@
+# Keep downloaded official evidence byte-identical so its SHA-256 checks survive checkout.
+data-sources/raw/** -text
